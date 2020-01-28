@@ -1,0 +1,4 @@
+安装emacs 语法检查器flycheck:
+M-x package-install flycheck
+在当前buffer启用flycheck:
+M-x flycheck-mode
