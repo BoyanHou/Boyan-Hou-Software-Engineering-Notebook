@@ -1,0 +1,36 @@
+Django python development server public access
+
+To start django development server,
+
+first configure settings.py:
+
+ALLOWER_HOSTS='*' 
+or
+ALLOWED_HOSTS = ['52.14.178.161', 'localhost', '0.0.0.0:8000']
+
+Then check for the AWS EC2 server security group inbound settings (should allow inbound traffic from public ips)
+
+Now start Django server:
+cd ~/ece568/mysite
+python3 manage.py runserver 0.0.0.0:8000
+
+Visit the server using ipv4: 52.14.178.161:8000
+
+=============================
+settings.py for postgresql
+example
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydatabase',
+        'USER': 'mydatabaseuser',
+        'PASSWORD': 'mypassword',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
+
+===========================
+
+
