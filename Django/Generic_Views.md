@@ -8,7 +8,9 @@
 
 
 - 每个URL对应一个请求；  
-- URL请求不能直接接触到html资源 
+- URL请求不能直接接触到html资源  
+  e.g. 在一个html页内，不能通过点击django的reverse url来直接获取到服务器上的另一个html资源；  
+    - 这是因为django处理URL的逻辑链导致的  
   必须通过view方法（either 自己的 or django提供的e.g. TemplateView class）获取该资源并做成httpresponse后才能返回给client
   (直接在)
   
