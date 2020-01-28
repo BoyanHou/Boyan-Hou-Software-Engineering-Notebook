@@ -1,0 +1,12 @@
+重载.bashrc:
+source ~/.bashrc
+简版： . ~/.bashrc
+
+=========================
+（ubuntu限定）
+在当前路径下，创建一个通往其它（任何）路径的symbolic link:
+ln -s /home/ubuntu/pms myfolder
+
+=========================
+to see if any process is bound to port 8000:
+sudo netstat -pna | grep 8000
