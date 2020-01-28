@@ -10,3 +10,7 @@ ln -s /home/ubuntu/pms myfolder
 =========================
 to see if any process is bound to port 8000:
 sudo netstat -pna | grep 8000
+
+=========================
+使.sh文件(shell script)可运行：
+ chmod +x <fileName>
