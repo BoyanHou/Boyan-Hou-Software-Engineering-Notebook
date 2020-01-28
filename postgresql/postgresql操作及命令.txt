@@ -1,0 +1,88 @@
+!!注意： psql命令行非\命令，必须加;才开始执行
+或者  打完命令，再使用\g进行执行
+===========================
+postgresql log：
+/var/log/postgresql
+
+postgresql conf:
+/etc/postgresql
+
+重启postgreql 服务：
+sudo /etc/init.d/postgresql restart
+
+===========================
+linux 命令 whereis:
+whereis postgresql 查看postgresql文件路径
+
+linux 命令 which: ???	
+
+============================
+用sudo su （switch user）切换到postgresql安装时自动创建的linux用户：
+sudo su postgres
+（该用户default为本机postgresql的超级用户）
+
+切换回本来的linux用户：
+exit
+
+或者使用sudo -u 直接以postgres用户身份打开 psql 程序
+sudo -u postgres psql
+此时\q退出psql时，回到的便是原linux用户,不用再exit了
+
+=============================
+Command-line Client: postgresql自带的命令行程序
+进入Command-line Client：
+psql
+
+退出psql Command-line Client：
+\q
+
+psql promt:
+xx=> 当前为超级用户
+xx
+===========================
+查看所有DB
+\l
+（short for \list）
+
+===========================
+连接到DB
+\c 
+(short for \connect)
+
+============================
+查看所有TB
+\dt
+
+===========================
+查看所有user
+\du
+
+===========================
+创建一个新postgresql用户
+CREATE USER myuser WITH PASSWORD ‘mypassword’;
+
+===========================
+给予特定用户，针对特定DB，所有权限
+GRANT ALL PRIVILEGES ON DATABASE myproject TO myuser;
+
+============================
+开启expand view （针对一行太长在控制台内表format变乱的情况）：
+\x on
+
+============================
+从pg_stat_activity中查询当前active query：
+SELECT * FROM pg_stat_activity WHERE state = 'active';
+
+============================
+step1:  revoke 对该db的连接
+REVOKE CONNECT ON DATABASE prj1_db FROM public;
+
+step2：  查看该db连接的pid:
+SELECT * FROM pg_stat_activity WHERE datname = 'prj1_db';
+
+step3:  按pid杀掉对该db的连接：
+SELECT pg_terminate_backend(24714);
+
+step4:  DROP DB
+DROP DATABASE prj1_db;
+
