@@ -1,6 +1,6 @@
 # Django_Postgresql: Arrayfield
 - First of All: I don't understand these:  
-  - what are the SQL operators `@>` and `<@` ??
+  - what are the SQL operators `@>` and `<@` ??  
 [here: django official doc for Arrayfield](https://docs.djangoproject.com/en/3.0/ref/contrib/postgres/fields/#postgresql-specific-model-fields)  
 - Arrayfield is Django's Postgresql-specific model field  
   - all Django's Postgresql-specific model field can be imported from:  
