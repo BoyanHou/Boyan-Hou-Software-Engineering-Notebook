@@ -11,3 +11,7 @@ git rm -r --cached .
 git add .
 最后commit
 git commit -sm "Remove ignored files"
+
+===================================================
+gitlab: 本地repo直接push到gitlab(创建新repo)
+git push --set-upstream https://gitlab.com/byhoo/ece568_prj1.git master
