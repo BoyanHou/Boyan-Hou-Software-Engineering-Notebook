@@ -14,6 +14,7 @@ sudo netstat -pna | grep 8000
 =========================
 使.sh文件(shell script)可运行：
  chmod +x <fileName>
+ （给shell运行此shell script的权限）
  
 =========================
 unpack .tgz file:
