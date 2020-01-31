@@ -20,5 +20,22 @@ git push --set-upstream https://gitlab.com/byhoo/ece568_prj1.git master
 查看所有 remote repo:
 git remote -v
 
-重置一个remote:
-git remote set-url <remote-name> <remote-url>
+更改一个已有remote:
+git remote set-url <existing remote-name> <remote-url>
+
+添加一个remote:
+git remote add <set remote's name; typically origin> <remote-url>
+
+===================================================
+git pull = git fetch, then git merge
+
+git fetch 之后 亦可以：
+
+git diff <remote-name>/<remote-branch> <local-branch> 
+查看远程分支与本地分支的代码差别
+
+或：
+git cherry <remote-name>/<remote-branch> <local-branch>
+查看远程分支与本地分支的commit差别
+
+===================================================
