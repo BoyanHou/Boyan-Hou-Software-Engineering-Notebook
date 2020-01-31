@@ -15,3 +15,10 @@ git commit -sm "Remove ignored files"
 ===================================================
 gitlab: 本地repo直接push到gitlab(创建新repo)
 git push --set-upstream https://gitlab.com/byhoo/ece568_prj1.git master
+
+==================================================
+查看所有 remote repo:
+git remote -v
+
+重置一个remote:
+git remote set-url <remote-name> <remote-url>
