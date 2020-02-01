@@ -1,4 +1,4 @@
-# model relationship API.md  
+# model relationship API
 
 ## One To One 
 [django official doc](https://docs.djangoproject.com/en/3.0/topics/db/examples/one_to_one/)  
