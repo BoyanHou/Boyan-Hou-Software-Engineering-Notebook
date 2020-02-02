@@ -13,9 +13,19 @@
 - all variables inside `{{ }}`  
   all logics inside `{% %}`  
 - `with`: set a variable value
+  version 1: 
   ```html
   {% with someVariableName = someValue %}
   {% endwith %}
+  ```
+  version 2:  
+  ```html
+  {% with someValue as someVariableName %} 
+  {% endwith %}
+  ```
+- `|add`: concate strings  
+  ```html
+  <div name="this is"|add:stringVar1|"hey hey"|add:stringVar2>
   ```
   
 - if-else  
