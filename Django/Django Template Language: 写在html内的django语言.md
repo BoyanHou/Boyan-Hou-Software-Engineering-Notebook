@@ -6,6 +6,8 @@
   
 ## Syntax
 - !! NOTE: 
+  - in Django Template Language you still can concat strings using `|add:`,  
+    however you still CAN'T concat variable names: build lists/dictionaries instead!  
   - if using a variable inside `{{}}`, then do not need to use `{%%}` to wrap it  
   - Django Template Language has NO `range()` function: you need to make the desired range in views and pass it into context  
   - Django Templates Language DO NOT USE `()` for accessing dictionary elements: USE `dic.items`, `dic.values`, `dic.keys`
