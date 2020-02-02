@@ -5,8 +5,19 @@
   DOES NOT handle statements  
   
 ## Syntax
+- !! NOTE: 
+  - if using a variable inside `{{}}`, then do not need to use `{%%}` to wrap it  
+  - Django Template Language has NO `range()` function: you need to make the desired range in views and pass it into context  
+  - Django Templates Language DO NOT USE `()` for accessing dictionary elements: USE `dic.items`, `dic.values`, `dic.keys`
+
 - all variables inside `{{ }}`  
-  all logics inside `{% %}`
+  all logics inside `{% %}`  
+- `with`: set a variable value
+  ```html
+  {% with someVariableName = someValue %}
+  {% endwith %}
+  ```
+  
 - if-else  
   ```html
   {% if athlete_list %}
