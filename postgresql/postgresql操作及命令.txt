@@ -86,3 +86,12 @@ SELECT pg_terminate_backend(24714);
 step4:  DROP DB
 DROP DATABASE prj1_db;
 
+=============================
+清除全部migrations，并drop数据库：
+1.清除全部migration文件
+find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+find . -path "*/migrations/*.pyc"  -delete
+2. DROP 对应数据库
+3. CREATE 重建数据库
+4. python3 manage.py makemigrations
+   python3 manage.py migrate
