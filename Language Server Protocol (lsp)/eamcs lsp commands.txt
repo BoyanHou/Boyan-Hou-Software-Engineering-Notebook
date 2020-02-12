@@ -1,0 +1,10 @@
+remove project root folder: (TAB will display all current added project roots)
+M-x lsp-workspace-folders-remove
+
+==============================================================
+
+add project root folder: 
+M-x lsp-workspace-folders-add
+
+==============================================================
+
