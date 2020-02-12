@@ -1,0 +1,5 @@
+By default gradle runs your program with no input connection.  
+To use standard input, you need to put
+run {
+ standardInput = System.in
+}
