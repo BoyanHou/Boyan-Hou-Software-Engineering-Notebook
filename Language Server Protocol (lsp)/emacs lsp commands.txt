@@ -8,3 +8,6 @@ M-x lsp-workspace-folders-add
 
 ==============================================================
 
+change java class names globally in emacs-lisp :
+Put the point on the name of the class and hit M-x lsp-rename.   
+Then type the new name of the class you want, then hit enter.
