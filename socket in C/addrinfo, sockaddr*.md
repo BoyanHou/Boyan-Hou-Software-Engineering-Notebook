@@ -1,6 +1,6 @@
-## Hierarchy Overview   
+## Hierarchy Overview
 - each `struct addrinfo` contains a `struct sockaddr`    
-- `sockaddr` is a generalized struct and can hold many types of socket information    
+- `sockaddr`  
   - `sockaddr_in` ("in" for "Internet") to be used with IPv4.  
   - `socketaddr_in6` to be used with IPv6.  
 ## addrinfo  
@@ -21,10 +21,15 @@
   };
   
   ```
-
-  
-
-- `struct sockaddr` is the original one, made to store  
+## sockaddr "family"  
+- `sockaddr` is a generalized struct and can hold many types of socket information 
+  ```C
+  // sockaddr source code
+  struct sockaddr {
+    unsigned short sa_family;  // address family, AF_xxx        
+    char sa_data[14];  // 14 bytes of protocol address    
+  }
+  ```
 - `struct sockaddr_storage` was made later and is bigger than `sockaddr`  
 - they did not simply change `sockaddr` to `sockaddr_storage` for historical reasons.
 
