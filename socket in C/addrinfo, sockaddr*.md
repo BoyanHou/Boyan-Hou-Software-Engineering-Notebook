@@ -5,7 +5,8 @@
   - `socketaddr_in6` to be used with IPv6.  
 ## addrinfo  
   - `addrinfo` stucts are chained as a linked list, each `addrinfo` contains a pointer to the next one.  
-  - fill in a hint `struct addrinfo` a bit, then call `getaddrinfo()` to get the full addrinfo chain.  
+  - use `getaddrinfo()` to get addrinfo:  
+    fill in a hint `struct addrinfo` a bit, then call `getaddrinfo()` to get the full addrinfo chain.  
   ```C
   // addrinfo source code
   struct addrinfo {
@@ -20,19 +21,7 @@
   };
   
   ```
-  ```C
-  // getaddrinfo() function signature
-  int getaddrinfo(const char *node,  // e.g. "www.example.com" or IP
-                  const char *service,  // e.g. "http" or port number
-                  
-  ```
-  ```C
-  #include <sys/types.h>
-  #include <sys/socket.h>
-  #include <netdb.h>
-  
-  #include <>
-  ```
+
   
 
 - `struct sockaddr` is the original one, made to store  
