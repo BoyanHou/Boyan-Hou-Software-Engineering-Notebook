@@ -26,10 +26,13 @@
   ```C
   // sockaddr source code
   struct sockaddr {
-    unsigned short sa_family;  // address family, AF_xxx        
+    unsigned short sa_family;  // address family, AF_xxx, e.g.: AF_INET (IPv4) or AF_INET6 (IPv6)      
     char sa_data[14];  // 14 bytes of protocol address    
   }
   ```
+  - `sa_data` contains a destination address and port number for the socket. 
+    - This is rather unwieldy since you don’t want to tediously pack the address in the sa_data by hand.  
+      
 - `struct sockaddr_storage` was made later and is bigger than `sockaddr`  
 - they did not simply change `sockaddr` to `sockaddr_storage` for historical reasons.
 
