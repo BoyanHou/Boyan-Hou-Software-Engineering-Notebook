@@ -36,4 +36,7 @@
   ```
   - used to  
     convert IPv4(IPv6) addresses from String format into Binary reprensentation,   
-    and store into sockaddr_in(sockaddr_in6)
+    and store into a String buffer
+  - NOTE: Two macros conveniently hold the largest string size of IPv4 or IPv6 address: INET_ADDRSTRLEN and INET6_ADDRSTRLEN.
+  - NOTE: The historical way of doing this is `inet_ntoa()`, this is obselete and does not work with IPv6
+  - NOTE: this only works with numeric IP addresses, there is not any DNS hostname lookup; for that, use getaddrinfo()  
