@@ -1,8 +1,11 @@
 ## Hierarchy Overview
 - each `struct addrinfo` contains a `struct sockaddr`    
-- `sockaddr`  
-  - `sockaddr_in` ("in" for "Internet") to be used with IPv4.  
-  - `socketaddr_in6` to be used with IPv6.  
+- `struct sockaddr`  
+  - `struct sockaddr_in` ("in" for "Internet") to be used with IPv4.  
+    - sin_port: the port number
+    - `struct in_addr`
+      - s_addr: the ip 
+  - `struct socketaddr_in6` to be used with IPv6.  
 ## addrinfo  
   - `addrinfo` stucts are chained as a linked list, each `addrinfo` contains a pointer to the next one.  
   - use `getaddrinfo()` to get addrinfo:  
