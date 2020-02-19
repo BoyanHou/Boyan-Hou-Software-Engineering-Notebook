@@ -36,28 +36,45 @@
   - `sa_data` contains a `destination address` and `port number` for the socket. 
     - This is rather unwieldy since you don’t want to tediously pack the address in the `sa_data` by hand.  
     - So we have `struct sockaddr_in` for IPv4 & `struct sockaddr_in6` for IPv6  
-    - NOTICE: `sockaddr`, `sockaddr_in`, `sockaddr_in6` pointers can be casted to each other if needed, because they are made to be the same size  
+    - NOTICE: `sockaddr`, `sockaddr_in` pointers can be casted to each other if needed, because they are made to be the same size  
+      - BUT `sockaddr_in6` is larger than these!
 - `sockaddr_in` for IPv4
   ```C
   // (IPv4 only)
   struct sockaddr_in {
     short int sin_family;  // corresponds to sa_family in sockaddr, should be set to AF_INET
     unsigned short int sin_port;  // port number, MUST be set to Network Byte Order (Big Endian) by using htons()
-    struct in_addr     sin_addr;    // ip address
+    struct in_addr     sin_addr;    // IPv4 address
     unsigned char      sin_zero[8]; // should be all 0s by using memset(); Pad the struct so it has the same size as sockaddr
   }
   
-  // IPv4 Internet address (a structure for historical reasons)    
+  // IPv4 address (a structure for historical reasons)    
   struct in_addr {        
-    uint32_t s_addr; // that's a 32-bit int (4 bytes)    
+    uint32_t s_addr; // IPv4 address, a 32-bit int (4 bytes)    
   };
   ```
   - NOTE: sin_zero (which is included to pad the structure to the length of a struct `sockaddr`) should be set to all zeros with the function memset().   
   - NOTE: sin_family corresponds to sa_family in a `sockaddr` and should be set to "AF_INET".   
   - NOTE: sin_port must be in Network Byte Order (by using htons()!)  
+- `sockaddr_in6` for IPv6  
+  ```C
+  // (IPv6 only)
+  struct sockaddr_in6 {
+    u_int16_t sin6_family;   // address family, AF_INET6
+    u_int16_t sin6_port;     // port number, Network Byte Order
+    u_int32_t sin6_flowinfo; // IPv6 flow information, too advanced to talk about here
+    struct in6_addr sin6_addr;  // IPv6 address
+    u_int32_t sin6_scope_id; // scope id, too advanced to talk about here
+  }
+  // IPv6 address
+  struct in6_addr {
+    unsigned char   s6_addr[16];   // IPv6 address 
+  }
+  ```
+  - NOTE: `sockaddr_in6` is larger than `sockaddr` (or `sockaddr_in4`), so their pointers cannot be casted to each other!   
+  - Otherwise, it is very similar to `sockaddr_in4`, refer the above `sockaddr_in4` part for more notices  
 - `struct sockaddr_storage` was made later and is bigger than `sockaddr`  
 - they did not simply change `sockaddr` to `sockaddr_storage` for historical reasons.
-
 
  ```C
  
