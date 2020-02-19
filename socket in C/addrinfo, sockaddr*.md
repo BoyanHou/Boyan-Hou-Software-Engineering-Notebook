@@ -73,10 +73,17 @@
   ```
   - NOTE: `sockaddr_in6` is larger than `sockaddr` (or `sockaddr_in4`), so their pointers cannot be casted to each other!   
   - Otherwise, it is very similar to `sockaddr_in4`, refer the above `sockaddr_in4` part for more notices  
-- `struct sockaddr_storage` was made later and is bigger than `sockaddr`  
-- they did not simply change `sockaddr` to `sockaddr_storage` for historical reasons.
-
+- `struct sockaddr_storage` can accomadate both IPv4 or IPv6!
  ```C
- 
- int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen); 
+ // sockaddr_storage source code
+ struct sockaddr_storage {
+   sa_family_t  ss_family;  // address family
+   
+   // all below is padding (to make this struct can accommadate both IPv4 or IPv6),
+   // and is implementation specific, ignore it:
+   char  __ss_pad1[_SS_PAD1SIZE];
+   int64_t  __ss_align;
+   char  __ss_pad2[_SS_PAD2SIZE];
+ }
  ```
+ - they did not simply change `sockaddr` to `sockaddr_storage` for historical reasons.
