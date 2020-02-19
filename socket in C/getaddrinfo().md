@@ -1,3 +1,4 @@
+`getaddrinfo()` is a better version of `gethostbyname()`
 ```C
 // includes
 #include <sys/types.h>
