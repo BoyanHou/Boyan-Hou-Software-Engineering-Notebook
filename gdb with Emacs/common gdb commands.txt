@@ -1,0 +1,6 @@
+set args for the debugged prorgam's next run:
+set args <arbitrary number of args>
+
+============================================
+show current args:
+show args
