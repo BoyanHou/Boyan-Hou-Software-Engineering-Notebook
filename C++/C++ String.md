@@ -14,3 +14,7 @@ stringstream ss;
 ss << a;
 string str = ss.str();
 ```
+
+- get length of string: `length()`, `size()` & `strlen()`  
+  There is no difference between `length` & `size()`;   
+  However, when you use `strlen()` and if there is a `\0` in the middle of your string, the resulted length will be cut.  
