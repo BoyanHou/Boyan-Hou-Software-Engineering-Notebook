@@ -26,14 +26,13 @@ string str = ss.str();
   
 - Concatnate string: 
   ```C++
-// use:
-string strTest(buf,6);
-// instead of:(because string will be cut by '\0')
-string strTest(buf);
+  // use:
+  string strTest(buf,6);
+  // instead of:(because string will be cut by '\0')
+  string strTest(buf);
 
-// use:
-strTest.append(buf,6);
-// instead of:(because string will be cut by '\0')
-strTest+=buf;
-  
+  // use:
+  strTest.append(buf,6);
+  // instead of:(because string will be cut by '\0')
+  strTest+=buf;
   ```
