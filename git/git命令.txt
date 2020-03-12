@@ -39,3 +39,15 @@ git cherry <remote-name>/<remote-branch> <local-branch>
 查看远程分支与本地分支的commit差别
 
 ===================================================
+更改remote branch:
+Using git v1.8.0 or later:
+git branch branch_name --set-upstream-to your_new_remote/branch_name
+
+Or you can use the -u switch:
+git branch branch_name -u your_new_remote/branch_name
+
+Using git v1.7.12 or earlier:
+git branch --set-upstream branch_name your_new_remote/branch_name
+=======================================================================
+
+
