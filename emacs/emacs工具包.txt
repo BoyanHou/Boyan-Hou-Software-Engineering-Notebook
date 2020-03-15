@@ -2,3 +2,7 @@
 M-x package-install flycheck
 在当前buffer启用flycheck:
 M-x flycheck-mode
+==================================
+手动删除elpa包：
+直接进入路径中删除对应的文件夹：
+~/.emacs.d/elpa/ (or the directory specified in your package-directory-list)
