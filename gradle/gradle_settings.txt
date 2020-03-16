@@ -11,3 +11,23 @@ compile -> implementation
 testCompile -> testImplementation
 runtime -> runtimeOnly
 ============================================================
+PATH!!
+set source folder for gradle project: 
+this works for getInputStream(path), 
+but DOES NOT work for: new File(path) or new FileReader(path)
+not sure why;
+
+to figure out the path gradle is using for File & FileReader, use java:
+System.out.println(new File(".").getAbsolutePath());
+
+sourceSets {
+        main {
+                java {
+                        srcDirs= ["src/main/java"]
+                }
+                resources {
+                        srcDirs= ["src/main/resources"]
+                }
+        }
+}
+===============================================================
