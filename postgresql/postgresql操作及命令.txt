@@ -95,3 +95,8 @@ find . -path "*/migrations/*.pyc"  -delete
 3. CREATE 重建数据库
 4. python3 manage.py makemigrations
    python3 manage.py migrate
+
+===============================
+<psql> 查看某一table的属性(property type，primary key, etc.)
+1. 连接到该数据库 \c db_name
+2. 查看某一table: \d table_name
