@@ -3,3 +3,11 @@ To use standard input, you need to put
 run {
  standardInput = System.in
 }
+============================================================
+<dependencies>
+v10.2.0 contains a rule to replace deprecated dependency configurations.
+
+compile -> implementation
+testCompile -> testImplementation
+runtime -> runtimeOnly
+============================================================
