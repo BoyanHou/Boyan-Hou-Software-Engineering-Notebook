@@ -1,0 +1,6 @@
+#{} VS ${} :
+${} is for direct String substitution, 
+therefore it's cannot be used for passing in Object-type parameters;
+but very suitable for passing in java.lang.Stirng directly
+
+=============================================================================
