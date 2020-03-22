@@ -1,3 +1,10 @@
+===========================================================
+run gradle with argmuments to main function:
+
+gradle run --args='arg1 arg2 agr3'
+
+
+===========================================================
 By default gradle runs your program with no input connection.  
 To use standard input, you need to put
 run {
