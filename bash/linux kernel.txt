@@ -16,7 +16,9 @@ taskset -pc <pid>
 ======================================
 将某一程序绑定在特定的一个或多个cpu核上启动：
 taskset -c <cores> command
-e.g.: taskset -c 3 ./my_program (将my_program 绑定在cpu第三个核心上启动)
+e.g.: taskset -c 3 ./my_program (将my_program 绑定在cpu 第3 个核心上启动)
+
+e.g.: taskset -c 0,2 ./my_program (将my_program 绑定在cpu 第0 & 第2 个核心上启动)
 
 ======================================
 将某一正在运行的进程绑定在特定的一个或多个cpu核上：
