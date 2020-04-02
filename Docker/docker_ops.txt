@@ -1,3 +1,21 @@
+docker 基本命令：
+
+查看所有docker image:
+docker images
+
+删除一个image(必须没有存在对此image的依赖时才行)：
+docker rmi <image_id 或 image_tag>
+
+查看所有正在运行的container:
+docker ps
+
+查看所有（包含不在运行的）contianer:
+docker ps -a
+
+gracefully停止一个container:
+docker stop <container_id 或 container_name>
+
+
 ======================================================
 build image
 
@@ -5,4 +23,23 @@ build image
 docker build -t server .
 - 使用当前路径下（"."）默认名为Dockerfile的配置文件进行image构建
 - "-t": 该image的标签为 server, 默认版本标签为 latest
+
+======================================================-
+run image (start a container)
+
+基础：
+docker run server
+- 启动container,运行tag为"server"的image (默认版本tag 为 latest)
+
+-p: port mapping
+e.g.: 
+docker run -p 12345:34567 server
+将外部的port 12345 映射到container内部的port 34567上
+
+!!以下两项可合并为 -it
+-i：开启input
+-t: 显示output(terminal)
+
+-d: 在背景中运行
+docker attach <?container_id>
 
