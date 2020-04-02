@@ -1,0 +1,8 @@
+======================================================
+build image
+
+基础：
+docker build -t server .
+- 使用当前路径下（"."）默认名为Dockerfile的配置文件进行image构建
+- "-t": 该image的标签为 server, 默认版本标签为 latest
+
