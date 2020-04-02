@@ -13,3 +13,17 @@ sudo systemctl enable docker
 docker --version
 
 ===========================================
+Got permission denied while trying to connect to the Docker daemon socket
+解决办法：将当前用户加入用户组
+
+1.创建docker用户组
+sudo groupadd docker
+
+2. 将当前用户加入用户组：
+sudo usermod -aG docker ${USER}
+
+3. 执行该步骤（可能需要输入密码），或重新登入ssh
+su -s ${USER}
+
+4. 尝试pull并启动hello-world image
+docker run hello-world
