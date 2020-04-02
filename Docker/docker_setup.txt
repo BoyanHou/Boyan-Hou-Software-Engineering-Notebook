@@ -1,0 +1,15 @@
+先移除旧版本：
+sudo apt-get remove docker docker-engine docker.io
+
+然后安装docker：
+sudo apt-get update
+sudo apt install docker.io
+
+启动：
+sudo systemctl start docker
+sudo systemctl enable docker
+
+最后查看版本：
+docker --version
+
+===========================================
