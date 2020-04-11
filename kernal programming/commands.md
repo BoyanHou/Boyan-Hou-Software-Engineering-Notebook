@@ -13,3 +13,5 @@
   ```bash
   sudo cat /boot/System.map-*-*-generic | grep -e set_pages_rw -e set_pages_ro -e sys_call_table
   ```
+- `strace`  
+  inspect the system calls that are made by a command using the “strace” UNIX command, e.g. `strace ls`  
