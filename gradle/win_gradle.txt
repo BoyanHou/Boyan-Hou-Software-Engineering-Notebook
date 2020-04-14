@@ -13,3 +13,12 @@ intellij 选取gradle 路径：
 Use Gradle from: Specified location
 然后选取已下载Gradle的路径 （！注意，选取到Gradle 文件夹即可）
 ==============================================================================
+
+intellij run gradle:
+在右侧的Gradle 栏里，找到选项'run'，右键run
+
+如何加入--args='xx xx xx':
+在顶部run按钮左侧，下拉选择Edit Configurations
+！注意：将Tasks一栏的run 移至Arguments栏中，成为：run --args='xxx xxx xxx'
+
+==============================================================================
