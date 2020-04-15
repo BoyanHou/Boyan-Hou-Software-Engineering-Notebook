@@ -1,0 +1,10 @@
+在control panel内 （！不是常规的系统设置里，必须是control panel内）设置地区，以应对excel & vba中文乱码问题：
+1. Open Control Panel
+2. Click Region
+3. Click the Administrative tab
+4. Click the Change system locale button
+5. Select which language to use when displaying text in programs
+
+ref:
+https://www.spreadsheet1.com/how-to-display-foreign-characters-in-vbe.html
+
