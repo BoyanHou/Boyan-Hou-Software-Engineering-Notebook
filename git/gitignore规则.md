@@ -25,3 +25,19 @@
 - 匹配 >= 0 个字符：`*`  
 - `[]`用来匹配括号内的任一字符，如`[abc]`，也可以在括号内加连接符，如`[0-9]`匹配0至9的数  
 - `?`用来匹配单个字符  
+
+## 实例：  
+  ```.gitignore
+  
+  *.a                 # 忽略 .a 文件
+  
+  !lib.a              # 但否定忽略 lib.a, 尽管已经在前面忽略了 .a 文件
+  
+  /TODO               # 仅在当前目录下忽略 TODO 文件， 但不包括子目录下的 subdir/TODO
+  
+  build/              # 忽略 build/ 文件夹下的所有文件
+  
+  doc/*.txt           # 忽略 doc/notes.txt, 不包括 doc/server/arch.txt
+  
+  doc/**/*.pdf        # 忽略所有的 .pdf 文件 在 doc/ directory 下的
+  ```
