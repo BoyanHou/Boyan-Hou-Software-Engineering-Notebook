@@ -2,6 +2,21 @@ git commit 改用emacs 编辑器：
 git config --global core.editor "emacs -nw"
 
 ===================================================
+查找git add 命令 stage 的文件：
+git diff --name-only --cached
+
+man:
+--name-only
+    Show only names of changed files.
+git diff --cached
+    Changes between the index and your last commit.
+    (--staged is also available as an alias for --cached above in more recent git versions.)
+    
+"Combined together you get the changes between the index and your last commit and 
+ Show only names of changed files."
+
+
+=====================================================
 在git目录下加.gitignore将会对该目录及所有下级目录应用该规则；下级目录可以加.gitignore覆盖该规则
 然而在加.gitignore之前已经被git追踪的文件，还将继续被追踪
 解决办法：
