@@ -22,3 +22,9 @@ intellij run gradle:
 ！注意：将Tasks一栏的run 移至Arguments栏中，成为：run --args='xxx xxx xxx'
 
 ==============================================================================
+
+使用intellij 单个运行 junit test function:
+须在settings -> build -> gradle -> Run tests using: 中选择 Intellij IDEA
+（否则若选择Gradle(default) 则只能整体运行所有tests, 尝试运行单个test funtion会报错）
+
+==============================================================================
