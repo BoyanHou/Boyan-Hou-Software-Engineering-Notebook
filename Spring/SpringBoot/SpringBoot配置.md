@@ -1,4 +1,14 @@
 - 设置资源路径（`html`, `jsp`等）  
+  ```txt
+  项目结构：
+  src
+  -> main
+    ->java
+      ->any.package.you.have
+    ->resources
+      application.properties
+    ->webapp
+  ```
   SpringBoot的对于资源的搜索路径默认为：`src/main/webapp/`   
   
   可以在`src/main/resources/applicatoins.properties`中对`spring.mvc.view.prefix`选项进行客制化，但相对路径的起始地址仍然是`src/main/webapp/`   
