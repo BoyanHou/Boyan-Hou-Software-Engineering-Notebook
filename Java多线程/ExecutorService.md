@@ -17,7 +17,7 @@ import java.util.concurrent.ExecutorService;
   ExecutorService executorService3 = Executors.newScheduledThreadPool(10);
   ```
 
-## 执行任务的方法： 
+## 执行任务的五种方法： 
   ```java
   execute(Runnable)
   submit(Runnable)
@@ -26,6 +26,19 @@ import java.util.concurrent.ExecutorService;
   invokeAll(...)
   ```
   - `execute(Runnable)`  
+    ```java
+    ExecutorService executorService = Executors.newSingleThreadExecutor();
+
+    executorService.execute(new Runnable() {
+        public void run() {
+            System.out.println("Asynchronous task");
+        }
+    });
+
+    executorService.shutdown();
+    ```
+    - 接收壹個`java.lang.Runnable`对象作为参数，并且以异步的方式执行它。  
+    - 使用这种方式没有办法获取执行`Runnable`之后的结果，如果你希望获取运行之后的返回值，就必须使用 接收`Callable`参数的`execute()`方法。    
   - `invokeAny(...)`  
     ```java
     ExecutorService executorService = Executors.newSingleThreadExecutor();
@@ -88,6 +101,10 @@ import java.util.concurrent.ExecutorService;
 
     executorService.shutdown();
     ```
+    - 会调用存在于`Collection`中的所有`Callable`对象，并且返回壹個包含`Future`对象的`Collection`，你可以通过这個返回的集合来管理每個`Callable`的执行结果。  
+    - 需要注意的是，任务有可能因为异常而导致运行结束，所以它可能并不是真的成功运行了。但是我们没有办法通过`Future`对象来了解到这個差异。  
+
+
 
 
 ## 关闭线程池：  
