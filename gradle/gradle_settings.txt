@@ -4,6 +4,21 @@ run gradle with argmuments to main function:
 gradle run --args='arg1 arg2 agr3'
 
 
+=========================================================
+
+configure gradle application (以此才能让gralde 有 run 功能)
+
+step1: 在build.gradle中加入application插件：
+plugins {
+   id "application"
+}
+
+step2: 设置application插件：
+application {
+    mainClassName = 'ece651.mini_amazon.MiniAmazonApplication'
+}
+!!注意：mainClassName 参数要使用 完整的 'package名 + 类名'
+
 ===========================================================
 By default gradle runs your program with no input connection.  
 To use standard input, you need to put
