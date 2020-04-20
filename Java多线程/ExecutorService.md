@@ -38,7 +38,37 @@ import java.util.concurrent.ExecutorService;
     executorService.shutdown();
     ```
     - 接收壹個`java.lang.Runnable`对象作为参数，并且以异步的方式执行它。  
-    - 使用这种方式没有办法获取执行`Runnable`之后的结果，如果你希望获取运行之后的返回值，就必须使用 接收`Callable`参数的`execute()`方法。    
+    - 使用这种方式没有办法获取执行`Runnable`之后的结果，如果你希望获取运行之后的返回值，就必须使用 接收`Callable`参数的`execute()`方法。 
+    
+    
+  - `submit(Runnable)`  
+    ```java
+    Future future = executorService.submit(new Runnable() {
+        public void run() {
+            System.out.println("Asynchronous task");
+        }
+    });
+    
+    System.out.println("future.get()=" + future.get()); //如果任务结束执行则返回 null
+    ```
+    - 同样接收壹個`Runnable`的实现作为参数，但是会返回壹個`Future`对象。  
+    - 这個`Future`对象可以用于判断`Runnable`是否结束执行  
+  - `submit(Callable)`  
+    ```java
+    Future future = executorService.submit(new Callable(){
+        public Object call() throws Exception {
+            System.out.println("Asynchronous Callable");
+            return "Callable Result";
+        }
+    });
+
+    System.out.println("future.get() = " + future.get());
+    ```
+    - 方法`submit(Callable)`和方法`submit(Runnable)`比较类似，但是区别则在于它们接收不同的参数类型。  
+    - `Callable`的实例与`Runnable`的实例很类似，但是`Callable`的`call()`方法可以返回壹個结果; 方法`Runnable.run()`则不能返回结果。  
+    - `Callable`的返回值可以从方法`submit(Callable)`返回的`Future`对象中获取  
+    
+    
   - `invokeAny(...)`  
     ```java
     ExecutorService executorService = Executors.newSingleThreadExecutor();
