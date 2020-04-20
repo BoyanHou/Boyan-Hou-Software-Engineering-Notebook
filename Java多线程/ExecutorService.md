@@ -142,6 +142,27 @@ import java.util.concurrent.ExecutorService;
   举例来说，如果你的程序通过 `main()` 方法启动，并且主线程退出了你的程序，如果你还有壹個活动的 `ExecutorService` 存在于你的程序中，那么程序将会继续保持运行状态。存在于 `ExecutorService` 中的活动线程会阻止Java虚拟机关闭。  
 - 为了关闭在`ExecutorService`中的线程，你需要调用`shutdown()`方法。`ExecutorService`并不会马上关闭，而是不再接收新的任务，壹但所有的线程结束执行当前任务，`ExecutorServie`才会真的关闭。所有在调用`shutdown()`方法之前提交到`ExecutorService`的任务都会执行。  
 - 如果你希望立即关闭`ExecutorService`，你可以调用`shutdownNow()`方法。这個方法会尝试马上关闭所有正在执行的任务，并且跳过所有已经提交但是还没有运行的任务。但是对于正在执行的任务，是否能够成功关闭它是无法保证的，有可能他们真的被关闭掉了，也有可能它会壹直执行到任务结束。这是壹個最好的尝试。  
+
+### 结合`awaitTermination`方法使用`shutdown`关闭线程池   
+- `shutdown`方法：平滑的关闭`ExecutorService`，当此方法被调用时，`ExecutorService`停止接收新的任务并且等待已经提交的任务（包含提交正在执行和提交未执行）执行完成。当所有提交任务执行完毕，线程池即被关闭。  
+- `awaitTermination`方法：接收`timeout`和`TimeUnit`两个参数，用于设定超时时间及单位。当等待超过设定时间时，会监测`ExecutorService`是否已经关闭，若关闭则返回`true`，否则返回`false`。一般情况下会和`shutdown`方法组合使用。  
   ```java
-  
+  public class TestShutDown {
+
+    public static void main(String[] args) throws InterruptedException{
+        ScheduledExecutorService service = Executors.newScheduledThreadPool(4);
+
+        service.submit(new Task());
+        service.submit(new Task());
+        service.submit(new Task());
+        
+        service.shutdown();
+
+        while (!service.awaitTermination(1, TimeUnit.SECONDS)) {
+            System.out.println("线程池没有关闭");
+        }
+
+        System.out.println("线程池已经关闭");
+    }
+  }
   ```
