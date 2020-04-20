@@ -1,5 +1,5 @@
-[ref:Eng](http://tutorials.jenkov.com/java-util-concurrent/executorservice.html#executorservice-example)  
-[ref:中文：开源中国](http://my.oschina.net/bairrfhoinn/blog/177639)     
+[ref: Eng](http://tutorials.jenkov.com/java-util-concurrent/executorservice.html#executorservice-example)  
+[ref: 中文：开源中国](http://my.oschina.net/bairrfhoinn/blog/177639)     
 ```java
 import java.util.concurrent.ExecutorService;
 ```
@@ -26,6 +26,38 @@ import java.util.concurrent.ExecutorService;
   invokeAll(...)
   ```
   - `execute(Runnable)`  
+  - `invokeAny(...)`  
+    ```java
+    ExecutorService executorService = Executors.newSingleThreadExecutor();
+ 
+    Set<Callable<String>> callables = new HashSet<Callable<String>>();
+
+    callables.add(new Callable<String>() {
+        public String call() throws Exception {
+            return "Task 1";
+        }
+    });
+    callables.add(new Callable<String>() {
+        public String call() throws Exception {
+            return "Task 2";
+        }
+    });
+    callables.add(new Callable<String>() {
+        public String call() throws Exception {
+            return "Task 3";
+        }
+    });
+
+    String result = executorService.invokeAny(callables);
+
+    System.out.println("result = " + result);
+
+    executorService.shutdown();
+    ```
+    - 接收壹個包含 `Callable` 对象的`Collection接口`作为参数。  
+    - 调用该方法不会返回 `Future`对象，而是返回集合中某壹個`Callable`对象的结果，而且无法保证调用之后返回的结果是哪壹個`Callable`，只知道它是这些 `Callable`中壹個执行结束的`Callable`对象。  
+    - 如果壹個任务运行完毕或者抛出异常，方法会取消其它的`Callable`的执行。  
+    
   - `invokeAll(...)`  
     ```java
     ExecutorService executorService = Executors.newSingleThreadExecutor();
