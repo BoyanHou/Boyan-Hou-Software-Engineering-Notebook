@@ -11,6 +11,16 @@ sudo systemctl enable docker
 
 最后查看版本：
 docker --version
+==========================================
+
+安装docker-compose
+（ref: https://docs.docker.com/compose/install/）
+
+第一步：download the current stable release of Docker Compose:
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+第二步：Apply executable permissions to the binary:
+sudo chmod +x /usr/local/bin/docker-compose
 
 ===========================================
 Got permission denied while trying to connect to the Docker daemon socket
