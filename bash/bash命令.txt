@@ -1,6 +1,10 @@
 重载.bashrc:
 source ~/.bashrc
 简版： . ~/.bashrc
+=========================
+安装过程中全选yes
+apt-get -y install [packagename]
+
 
 =========================
 （ubuntu限定）
