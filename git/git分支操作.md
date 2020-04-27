@@ -15,6 +15,7 @@
   （git branch命令本身只是创造新分支，创造后并没有自动切换到新分支上）  
   结合`git checkout`命令，可以实现创建并切换分支:`git checkout -b <new_branch_name>`  
 - 删除本地分支 `git branch -d <branch_name>`  
+- 删除远程分支 `git push origin --delete <branch_name>`  
 - Q: `-D`选项是干什么用的？强制删除分支？  
 
 
