@@ -17,6 +17,7 @@
 - 根据`commitID`创造本地分支`git checkout -b <new_branch_name> <commitID>`  
 - 删除本地分支 `git branch -d <branch_name>`  
 - 删除远程分支 `git push origin --delete <branch_name>`  
+- 清理（远程没有的）本地分支：`git fetch -p`  
 - Q: `-D`选项是干什么用的？强制删除分支？  
 
 
