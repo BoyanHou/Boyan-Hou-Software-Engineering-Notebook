@@ -1,5 +1,5 @@
 # Git 分支操作
-[ref：廖雪峰Git分支 教程](https://www.liaoxuefeng.com/wiki/896043488029600/900003767775424)
+[ref：廖雪峰Git教程：分支管理](https://www.liaoxuefeng.com/wiki/896043488029600/900003767775424)
 
 ## 查看分支  
 - 查看本地分支 `git branch`   
