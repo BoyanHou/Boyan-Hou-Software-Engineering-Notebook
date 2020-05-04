@@ -9,6 +9,14 @@
 
 ## 切换分支  
 - 切换本地分支 `git checkout <branch_name>`  
+- 切换远程分支: 
+  - Using git v1.8.0 or later:  
+    `git branch branch_name --set-upstream-to your_new_remote/branch_name`  
+    Or you can use the -u switch:  
+    `git branch branch_name -u your_new_remote/branch_name`  
+  - Using git v1.7.12 or earlier:  
+    `git branch --set-upstream branch_name your_new_remote/branch_name`  
+  
 
 ## 创建/删除 分支
 - 创建本地分支 `git branch <new_branch_name>`  
