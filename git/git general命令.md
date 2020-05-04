@@ -1,0 +1,44 @@
+- git commit 改用emacs 编辑器：  
+    `git config --global core.editor "emacs -nw"`  
+
+- 查找git add 命令 stage 的文件：  
+    `git diff --name-only --cached`  
+    ```bash
+    man:
+    --name-only
+        Show only names of changed files.
+    git diff --cached
+        Changes between the index and your last commit.
+    ```
+    >(--staged is also available as an alias for --cached above in more recent git versions.)  <br><br>
+    >"Combined together you get the changes between the index and your last commit and Show only names of changed files."  
+
+
+===================================================
+gitlab: 本地repo直接push到gitlab(创建新repo)
+git push --set-upstream https://gitlab.com/byhoo/ece568_prj1.git master
+
+==================================================
+查看所有 remote repo:
+git remote -v
+
+更改一个已有remote:
+git remote set-url <existing remote-name> <remote-url>
+
+添加一个remote:
+git remote add <set remote's name; typically origin> <remote-url>
+
+===================================================
+git pull = git fetch, then git merge
+
+git fetch 之后 亦可以：
+
+git diff <remote-name>/<remote-branch> <local-branch> 
+查看远程分支与本地分支的代码差别
+
+或：
+git cherry <remote-name>/<remote-branch> <local-branch>
+查看远程分支与本地分支的commit差别
+
+===================================================
+
