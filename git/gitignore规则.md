@@ -1,7 +1,15 @@
 # gitignore规则
 [参考：简书](https://www.jianshu.com/p/ea6341224e89)  
 
+
 ## 小朋友你是否有很多问号？  
+- Q：在加.gitignore之前已经被git追踪的文件，还将继续被追踪:
+- A：  
+  先移除所有正追踪文件：`git rm -r --cached . `    
+  再按照新的.gitignore规则追踪所有文件：`git add .`  
+  最后commit: `git commit -sm "Remove ignored files"`
+  
+  
 - Q: 为什么执行了 `git rm -rf --cached .` 之后 `git add` 还会加入 `.gitignore`中已经ignore的文件？  
   A：因为此时远程仓库中存在这个文件，所以本地仓库会进行强制追踪；   
   解决：  
@@ -17,6 +25,7 @@
   i.e. 在本地将这个文件移除（或备份到新的文件夹中），然后push到远程仓库中，以此移除远程仓库中的该文件，然后.gitignore规则即可正确作用于该文件  
   
 ## .gitignore规则：   
+- 在git目录下加.gitignore将会对该目录及所有下级目录应用该规则；下级目录可以加.gitignore覆盖该规则  
 - 忽略`.gitignore`中的空行    
 - 注释：`#`  
 - 可以在前面添加正斜杠/来避免递归  
