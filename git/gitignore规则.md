@@ -3,11 +3,11 @@
 
 
 ## 小朋友你是否有很多问号？  
-- Q：在加.gitignore之前已经被git追踪的文件，还将继续被追踪:
-- A：  
-  先移除所有正追踪文件：`git rm -r --cached . `    
-  再按照新的.gitignore规则追踪所有文件：`git add .`  
-  最后commit: `git commit -sm "Remove ignored files"`
+- Q：在加.gitignore之前已经被git追踪的文件，还将继续被追踪:  
+  A：  
+  1. 先移除所有正追踪文件：`git rm -r --cached . `    
+  2. 再按照新的.gitignore规则追踪所有文件：`git add .`  
+  3. 最后commit: `git commit -sm "Remove ignored files"`
   
   
 - Q: 为什么执行了 `git rm -rf --cached .` 之后 `git add` 还会加入 `.gitignore`中已经ignore的文件？  
