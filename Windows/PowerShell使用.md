@@ -6,5 +6,9 @@
   
     | PowerShell | Bash |  
     | ---------- | ---- |
+    | `Set-Location`, `sl` | `cd` |
+    | `Get-ChildItem`, `gci` | `ls` |
     | `Copy-Item` | `cp` |   
     | `Move-Item` | `mv` |  
+    | `Remove-Item` | `rm` |
+
