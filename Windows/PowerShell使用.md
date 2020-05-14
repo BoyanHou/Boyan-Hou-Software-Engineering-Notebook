@@ -1,0 +1,7 @@
+# PowerShell使用  
+[ref:web](https://programminghistorian.org/en/lessons/intro-to-powershell#quick-reference)  
+- 不区分大小写  
+- PowerShell 常见命令自带bash alias  
+  - 例如:  
+    `Copy-Item` <-> `cp`   
+     `Move-Item` <-> `mv`  
