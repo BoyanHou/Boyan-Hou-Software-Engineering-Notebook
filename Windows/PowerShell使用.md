@@ -3,5 +3,11 @@
 - 不区分大小写  
 - PowerShell 常见命令自带bash alias  
   - 例如:  
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+  | PowerShell | Bash |  
+  | ---------- | ---- |
     `Copy-Item` <-> `cp`   
      `Move-Item` <-> `mv`  
