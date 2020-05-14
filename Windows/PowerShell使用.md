@@ -8,6 +8,7 @@
     | ---------- | ---- |
     | `Set-Location`, `sl` | `cd` |
     | `Get-ChildItem`, `gci` | `ls` |
+    | `mkdir` | `mkdir` |
     | `Copy-Item` | `cp` |   
     | `Move-Item` | `mv` |  
     | `Remove-Item` | `rm` |
