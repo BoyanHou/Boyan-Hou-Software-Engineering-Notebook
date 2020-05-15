@@ -11,8 +11,13 @@ Install-Module posh-git
 Install-Module oh-my-posh
 ```
 
-### 启用
-
+### 启用模块和prompt主题  
+```ps1
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-Theme Agnoster  
+```
+- 可以使用`Get-Themes`查看所有可用的prompt主题  
 
 <hr>
 
