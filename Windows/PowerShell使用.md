@@ -22,15 +22,6 @@
     | Measure-Object | measure | wc | Gets statistical information about an object. Use Get-Content and pipe the output to Measure-Object with the parameters -line, -word, and -character to get word count information. |
     | > | none | > | Redirection. Puts the output of the command to the left of > into a file to the right of >. |
     | \| | none | \| | Piping. Takes the output of the command to the left and uses it as the input for the command to the right. |
-Get-Help	none	man	Gets the help file for a cmdlet. Adding the parameter -online opens the help page on TechNet.
-exit	none	exit	Exits PowerShell
-  
-    | PowerShell | Bash |  
-    | ---------- | ---- |
-    | `Set-Location`, `sl` | `cd` |
-    | `Get-ChildItem`, `gci` | `ls` |
-    | `mkdir` | `mkdir` |
-    | `Copy-Item` | `cp` |   
-    | `Move-Item` | `mv` |  
-    | `Remove-Item` | `rm` |
+    | Get-Help | none | man | Gets the help file for a cmdlet. Adding the parameter -online opens the help page on TechNet. |
+    | exit | none | exit | Exits PowerShell |
 
