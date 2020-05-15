@@ -19,7 +19,10 @@ Set-Theme Agnoster
 ```
 - 可以使用`Get-Themes`命令 查看所有可用的prompt主题  
 
-<hr>
+<hr>  
+
+### 设置PowerShell初始化自启动模块和主题  
+1. 输入`$PROFILE` 查看PowerShell profile文件所在路径(**不同于Windows Terminal所使用的 settings.json 文件**)
 
 ### 注意事项
 - 乱码  
