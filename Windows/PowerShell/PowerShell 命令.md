@@ -4,7 +4,7 @@
 
 ## 一些自己发现的PowerShell能用的bash命令  
 - `tree`  
-  
+- `clear`  
 ## PowerShell 常见命令自带bash alias  
   - 例如:  
     
