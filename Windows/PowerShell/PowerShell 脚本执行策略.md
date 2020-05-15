@@ -1,4 +1,4 @@
-# PowerShell 脚本
+# PowerShell 脚本执行策略
 [ref: Powershell 编写和运行脚本](https://www.pstips.net/powershell-create-and-start-scripts.html)  
 
 - 脚本执行策略限制  
