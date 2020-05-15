@@ -40,7 +40,8 @@ Set-Theme Agnoster
 ### 注意事项
 - 乱码：使用了非`PowerLine`字体
   > 首先需要注意的是，oh-my-posh 主题使用了一些非 Powerline 字体不支持的字符，因此如果你使用默认的等宽字体（比如 Consolas），在显示过程中就会出现乱码、字符显示不全的现象。  
-  [Windows 安装PowerLine字体 ](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/Windows/Windows%20%E5%AE%89%E8%A3%85PowerLine%E5%AD%97%E4%BD%93.md)
+  
+  [查看此篇解决方案Windows 安装PowerLine字体 ](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/Windows/Windows%20%E5%AE%89%E8%A3%85PowerLine%E5%AD%97%E4%BD%93.md)
 
 - 日期显示bug: 
    > 值得注意：如果你发现后面的日期显示出现了凌乱的现象（比如本该在同一行显示的字符却跑到了下一行），多半是因为显示了中文。目前很多终端都不能正常的显示中文或 CJK 字符（即：Double-width character），所以你可以通过下面这个命令将 PowerShell 的环境设置为 en-US 的英文环境：  
