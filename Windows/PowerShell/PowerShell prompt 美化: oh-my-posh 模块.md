@@ -17,7 +17,7 @@ Import-Module posh-git
 Import-Module oh-my-posh
 Set-Theme Agnoster  
 ```
-- 可以使用`Get-Themes`查看所有可用的prompt主题  
+- 可以使用`Get-Themes`命令 查看所有可用的prompt主题  
 
 <hr>
 
