@@ -3,7 +3,7 @@
 [Powerline GitHub repo 地址](https://github.com/powerline/fonts): `https://github.com/powerline/fonts`     
 <br>
 
-1. 克隆该仓库到本地：  
+1. 克隆该仓库到本地
 
 2. 找到并运行`install.ps1`，它会自动为我们安装所有的 PowerLine 字体。  
 
