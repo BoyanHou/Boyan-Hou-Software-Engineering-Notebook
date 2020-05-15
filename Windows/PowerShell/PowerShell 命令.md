@@ -25,4 +25,5 @@
     | \| | none | \| | Piping. Takes the output of the command to the left and uses it as the input for the command to the right. |
     | Get-Help | none | man | Gets the help file for a cmdlet. Adding the parameter -online opens the help page on TechNet. |
     | exit | none | exit | Exits PowerShell |
+    | tree | ?? | tree | 省略 | 
 
