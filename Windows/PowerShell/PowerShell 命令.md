@@ -2,7 +2,7 @@
 [ref: Introduction to the Windows Command Line with PowerShell By Ted Dawson](https://programminghistorian.org/en/lessons/intro-to-powershell#quick-reference)  
 - PowerShell命令 不区分大小写  
 
-## 一些自己发现PowerShell能用的bash命令  
+## 一些自己发现的PowerShell能用的bash命令  
 - `tree`  
   
 ## PowerShell 常见命令自带bash alias  
