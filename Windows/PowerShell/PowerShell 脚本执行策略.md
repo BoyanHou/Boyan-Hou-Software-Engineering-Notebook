@@ -11,7 +11,8 @@
 
 - 更改脚本执行策略：`Set-ExecutionPolicy UnRestricted`  
   只有**管理员**才有权限更改这个策略。非管理员会报错。 
-
+  - 在开始界面右击 windows terminal 程序，选择以 admin 身份打开即可。  
+  
 - PowerShell 支持的`执行策略`类型  
   - 脚本执行策略类型为：`Microsoft.PowerShell.ExecutionPolicy`  
   - 查看所有支持的执行策略：`[System.Enum]::GetNames([Microsoft.PowerShell.ExecutionPolicy])`  
