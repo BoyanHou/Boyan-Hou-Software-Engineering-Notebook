@@ -28,6 +28,7 @@ Install-Module oh-my-posh
     Invoke-WebRequest -Uri 'https://github.com/powerline/fonts/archive/master.zip' -OutFile .\powerlinefonts.zip
     Expand-Archive .\powerlinefonts.zip
     .\powerlinefonts\fonts-master\install.ps1
+    
     #Clean up after install is done
     Remove-Item .\powerlinefonts.zip
     Remove-Item .\powerlinefonts -Recurse
