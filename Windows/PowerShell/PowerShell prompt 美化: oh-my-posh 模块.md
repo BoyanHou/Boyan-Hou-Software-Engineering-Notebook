@@ -19,10 +19,23 @@ Set-Theme Agnoster
 ```
 - 可以使用`Get-Themes`命令 查看所有可用的prompt主题  
 
-<hr>  
+
 
 ### 设置PowerShell初始化自启动模块和主题  
 1. 输入`$PROFILE` 查看PowerShell profile文件所在路径(**不同于Windows Terminal所使用的 settings.json 文件**)
+2. 打开该 profile文件，写入:  
+   ```PowerShell.profile.ps1
+    Import-Module posh-git
+    Import-Module oh-my-posh
+    Set-Theme Agnoster  
+   ``` 
+   此后，PowerShell 便会在启动时自动装载模块及主题。  
+3. 若出现执行策略报错：`xxx.ps1 cannot be loaded because running scripts is disabled on this system`  
+   [查看此篇解决方案](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/Windows/PowerShell/PowerShell%20%E6%8A%A5%E9%94%99.md)  
+   
+   
+<hr>  
+
 
 ### 注意事项
 - 乱码  
