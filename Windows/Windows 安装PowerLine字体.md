@@ -1,4 +1,4 @@
-# Windows安装PowerLine字体 
+# Windows 安装PowerLine字体 
 
 [Powerline GitHub repo 地址](https://github.com/powerline/fonts): `https://github.com/powerline/fonts`     
 <br>
