@@ -1,4 +1,4 @@
-# PowerShell 通过json配置文件客制化外观
+# PowerShell 配置json文件
 - 
 
 ## 注意  
