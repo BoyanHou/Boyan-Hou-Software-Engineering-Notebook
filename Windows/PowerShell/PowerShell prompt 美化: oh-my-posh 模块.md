@@ -21,7 +21,8 @@ Install-Module oh-my-posh
   > 首先需要注意的是，oh-my-posh 主题使用了一些非 Powerline 字体不支持的字符，因此如果你使用默认的等宽字体（比如 Consolas），在显示过程中就会出现乱码、字符显示不全的现象。  
   - 安装 Powerline 字体：   
     [Powerline GitHub repo 地址](https://github.com/powerline/fonts): `https://github.com/powerline/fonts`  
-    以下为[网路上]()一份用于获取 PowerLine字体的 PowerShell Script:  
+    <br>
+    以下为[网路上](https://github.com/itknowledge4/QuickTips/blob/master/Spice%20up%20your%20Powershell%20prompt/commands.ps1)一份用于获取 PowerLine字体的 PowerShell Script:  
     ```getFont.ps1
     #Get and install some cool fonts
     Invoke-WebRequest -Uri 'https://github.com/powerline/fonts/archive/master.zip' -OutFile .\powerlinefonts.zip
