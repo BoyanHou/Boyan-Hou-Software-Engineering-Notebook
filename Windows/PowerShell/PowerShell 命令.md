@@ -1,6 +1,9 @@
 # PowerShell 命令
 [ref: Introduction to the Windows Command Line with PowerShell By Ted Dawson](https://programminghistorian.org/en/lessons/intro-to-powershell#quick-reference)  
 - PowerShell命令 不区分大小写  
+
+## 一些自己发现PowerShell能用的bash命令  
+- `tree`  
   
 ## PowerShell 常见命令自带bash alias  
   - 例如:  
@@ -25,5 +28,4 @@
     | \| | none | \| | Piping. Takes the output of the command to the left and uses it as the input for the command to the right. |
     | Get-Help | none | man | Gets the help file for a cmdlet. Adding the parameter -online opens the help page on TechNet. |
     | exit | none | exit | Exits PowerShell |
-    | tree | ?? | tree | 省略 | 
 
