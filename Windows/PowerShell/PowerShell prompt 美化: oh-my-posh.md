@@ -4,5 +4,6 @@
 - [oh-my-posh GitHub repo 地址](https://github.com/JanDeDobbeleer/oh-my-posh)：`https://github.com/JanDeDobbeleer/oh-my-posh`  
 ### 安装  
 ```ps1
-
+Install-Module posh-git
+Install-Module oh-my-posh
 ```
