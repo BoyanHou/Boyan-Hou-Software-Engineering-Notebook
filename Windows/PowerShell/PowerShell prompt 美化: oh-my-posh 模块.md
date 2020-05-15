@@ -31,7 +31,7 @@ Set-Theme Agnoster
    ``` 
    此后，PowerShell 便会在启动时自动装载模块及主题。  
 3. 若出现执行策略报错：`xxx.ps1 cannot be loaded because running scripts is disabled on this system`  
-   [查看此篇解决方案](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/Windows/PowerShell/PowerShell%20%E6%8A%A5%E9%94%99.md)  
+   [查看此篇解决方案：](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/Windows/PowerShell/PowerShell%20%E8%84%9A%E6%9C%AC%E6%89%A7%E8%A1%8C%E7%AD%96%E7%95%A5.md)  
    
    
 <hr>  
