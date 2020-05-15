@@ -55,5 +55,5 @@ Set-Theme Agnoster
     Remove-Item .\powerlinefonts -Recurse
     ```
 - 日期显示bug: 
-> 值得注意：如果你发现后面的日期显示出现了凌乱的现象（比如本该在同一行显示的字符却跑到了下一行），多半是因为显示了中文。目前很多终端都不能正常的显示中文或 CJK 字符（即：Double-width character），所以你可以通过下面这个命令将 PowerShell 的环境设置为 en-US 的英文环境：  
-   `Set-Culture en-US`
+   > 值得注意：如果你发现后面的日期显示出现了凌乱的现象（比如本该在同一行显示的字符却跑到了下一行），多半是因为显示了中文。目前很多终端都不能正常的显示中文或 CJK 字符（即：Double-width character），所以你可以通过下面这个命令将 PowerShell 的环境设置为 en-US 的英文环境：  
+      `Set-Culture en-US`
