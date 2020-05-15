@@ -1,4 +1,4 @@
-# PowerShell使用  
+# PowerShell 命令
 [ref: Introduction to the Windows Command Line with PowerShell By Ted Dawson](https://programminghistorian.org/en/lessons/intro-to-powershell#quick-reference)  
 - PowerShell命令 不区分大小写  
   
