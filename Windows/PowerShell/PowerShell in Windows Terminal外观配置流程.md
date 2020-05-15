@@ -6,3 +6,4 @@
 - [修改settings.json文件以客制化windows terminal外观](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/Windows/windows%20%20terminal/%E4%BF%AE%E6%94%B9settings.json%E4%BB%A5%E5%AE%A2%E5%88%B6%E5%8C%96windows%20terminal%E5%A4%96%E8%A7%82.md)
 
 ## Step2: 安装并启用 PowerShell 模块 `oh-my-posh` 以客制化 PowerShell prompt  
+[boyan: PowerShell prompt 美化： oh-my-posh 模块](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/Windows/PowerShell/PowerShell%20prompt%20%E7%BE%8E%E5%8C%96:%20oh-my-posh%20%E6%A8%A1%E5%9D%97.md)
