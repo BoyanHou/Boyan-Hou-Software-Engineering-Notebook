@@ -2,8 +2,7 @@
 [ref: 终端（Terminal）美化与扩展](https://zyxin.xyz/blog/2019-07/BeautifyTerminal/)
 
 ## 什么是PowerLine
-- PowerLine 是用来美化各种 shell (e.g.`zsh`，`bash`) prompt 的工具， 
-
+- PowerLine 是 prompt（命令提示符）美化工具， 可用于各种 shell (e.g.`zsh`，`bash`)   
 - Powerline有很多版本，有直接通过shell配置脚本实现的，也有通过独立程序进行显示的。
   - powerline: 这应该是最初的也是最全的powerline，基于Python
   - powerline-shell: 这是针对美化shell的版本，同样基于Python，配置比上面的简单
