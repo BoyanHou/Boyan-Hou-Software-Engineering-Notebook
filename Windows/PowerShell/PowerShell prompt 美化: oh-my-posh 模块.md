@@ -15,4 +15,4 @@ Install-Module oh-my-posh
 - 乱码  
   > 首先需要注意的是，oh-my-posh 主题使用了一些非 Powerline 字体不支持的字符，因此如果你使用默认的等宽字体（比如 Consolas），在显示过程中就会出现乱码、字符显示不全的现象。  
   - 安装 Powerline 字体：   
-    [Powerline GitHub reoi 地址](https://github.com/powerline/fonts): `https://github.com/powerline/fonts`
+    [Powerline GitHub repo 地址](https://github.com/powerline/fonts): `https://github.com/powerline/fonts`
