@@ -7,3 +7,5 @@
 Install-Module posh-git
 Install-Module oh-my-posh
 ```
+<hr>
+### 注意事项
