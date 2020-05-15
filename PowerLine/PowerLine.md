@@ -1,4 +1,10 @@
+# PowerLine
+
+[ref: 终端（Terminal）美化与扩展](https://zyxin.xyz/blog/2019-07/BeautifyTerminal/)  
+[PowerLine 官方GitHub repo](https://github.com/powerline/powerline)  
+
 ## 什么是PowerLine 
+
 > Powerline is a statusline plugin for vim, and provides statuslines and prompts for several other applications, including zsh, bash, fish, tmux, IPython, Awesome, i3 and Qtile.  
 
 (所以 PowerLine 最主要的目的是为 vim 美化状态行显示...)  
