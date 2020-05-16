@@ -11,4 +11,5 @@
 | 查看有没有进程绑定了port 8000 | sudo netstat -pna \| grep 8000 | |
 | 使.sh文件(shell script)可运行（给shell运行此shell script的权限） | chmod +x <fileName> | |
 | 解压 .tgz 文件 | tar zxvf file_name.tgz | |
+| 切换用户<br>（实际上：以目标用户的uid在子进程中运行新的shell） |  | |
 
