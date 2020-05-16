@@ -1,15 +1,15 @@
 # bash命令总览
 
-重载.bashrc:
-source ~/.bashrc
-简版： . ~/.bashrc
-=========================
-安装过程中全选yes
-apt-get -y install [packagename]
+| description | bash command | short ver |
+| ------------ | ----------- | --------- |
+| 重载.bashrc | source ~/.bashrc | . ~/.bashrc |
+| 安装过程中全选yes | apt-get -y install [packagename] | N/A |
+| 查看所有用户密码 | cat /etc/passwd | N/A |
+
+
 
 ==========================
-查看所有用户密码：
-cat /etc/passwd
+
 
 =========================
 改密码
