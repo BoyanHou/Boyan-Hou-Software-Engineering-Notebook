@@ -3,15 +3,11 @@
 
 > The su (short for substitute or switch user) utility allows you to run commands with the privileges of another user, by default the root user.  
 
-- `su`指令 可以使您以其它用户的权限执行命令  
-  ```bash
-  su [OPTIONS] [USER_COMMANDS ...]
-  ```
-- `su` 默认切换到 root 用户  
-- 切换至另一用户之后
-  - 所使用的shell (e.g. bash) 和 home (HOME) 环境变量会根据目标用户而切换  
+> boyan: 事实上，当使用 su another_user_name 切换用户时，是以目标用户的身份，fork 出了一个当前shell进程的子进程（也是个shell，具体是个什么shell，由etc/passwd 中对应的目标用户的entry决定）  
+
+- `su` 单独使用，默认切换到 root 用户  
+  - 默认情况下，使用的shell 和 环境变量，是由 etc/passwd 中对应的目标用户的entry定义的，并不会load ~/.bashrc
   - pwd 则不会变化  
   - 可以使用`whoami`命令随时查看当前身份  
-- 
 
 
