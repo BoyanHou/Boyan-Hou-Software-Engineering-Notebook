@@ -8,6 +8,17 @@
   sudo apt-get install python-pip
   ```
 2. 通过 `pip` 下载 PowerLine package：  
-  ```bash
+  
+  ```bash  
+  # 安装到当前`$HOME`用户目录下   
   pip install --user git+git://github.com/Lokaltog/powerline
+  # 对应的卸载
+  pip uninstall powerline
+  
+  # system wide 安装  
+  su -c 'pip install git+git://github.com/Lokaltog/powerline'
+  # 对应的卸载
+  su -c 'pip uninstall powerline'
   ```
+  
+  
