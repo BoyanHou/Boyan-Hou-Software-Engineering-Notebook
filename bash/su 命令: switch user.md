@@ -8,8 +8,10 @@
   su [OPTIONS] [USER_COMMANDS ...]
   ```
 - `su` 默认切换到 root 用户  
-- 切换至另一用户之后，所使用的shell (e.g. bash) 和 home (HOME) 环境变量会根据目标用户而切换  
-  而 pwd 则不会变化  
+- 切换至另一用户之后
+  - 所使用的shell (e.g. bash) 和 home (HOME) 环境变量会根据目标用户而切换  
+  - pwd 则不会变化  
+  - 可以使用`whoami`命令随时查看当前身份  
 - 
 
 
