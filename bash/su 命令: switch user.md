@@ -2,6 +2,7 @@
 [ref: Su Command in Linux (Switch User)](https://linuxize.com/post/su-command-in-linux/)  
 
 > The su (short for substitute or switch user) utility allows you to run commands with the privileges of another user, by default the root user.  
+<br>
 
 ### 使用`su another_user_name`切换用户
 > boyan: 事实上，当使用`su another_user_name`切换用户时，是以目标用户的身份，fork 出了一个当前shell进程的子进程（也是个shell，具体是个什么shell，由etc/passwd 中对应的目标用户的entry决定）  
