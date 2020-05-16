@@ -29,8 +29,6 @@
 | 查看当前机器核心数量 | cat /proc/cpuinfo \| grep process | |
 | 查看所有process的cpu使用情况 | top | |
 | 查看某一porcess的核affinity （可以使用哪些cpu核）| taskset -pc <pid> | |
-| 将某一程序绑定在特定的一个或多个cpu核上启动 | 
-  taskset -c <cores> command <br>e.g.: taskset -c 3 ./my_program (将my_program 绑定在cpu 第3 个核心上启动) <br>e.g.: taskset -c 0,2 ./my_program (将my_program 绑定在cpu 第0 & 第2 个核心上启动) | |
-| 将某一正在运行的进程绑定在特定的一个或多个cpu核上 | 
-  taskset -pc <cores> pid <br>e.g.： taskset -pc 3 11234 (将pid为11234的进程绑定在cpu第三个核心上) | |
+| 将某一程序绑定在特定的一个或多个cpu核上启动 | taskset -c <cores> command <br>e.g.: taskset -c 3 ./my_program (将my_program 绑定在cpu 第3 个核心上启动) <br>e.g.: taskset -c 0,2 ./my_program (将my_program 绑定在cpu 第0 & 第2 个核心上启动) | |
+| 将某一正在运行的进程绑定在特定的一个或多个cpu核上 | taskset -pc <cores> pid <br>e.g.： taskset -pc 3 11234 (将pid为11234的进程绑定在cpu第三个核心上) | |
 
