@@ -1,3 +1,5 @@
+# bash命令总览
+
 重载.bashrc:
 source ~/.bashrc
 简版： . ~/.bashrc
