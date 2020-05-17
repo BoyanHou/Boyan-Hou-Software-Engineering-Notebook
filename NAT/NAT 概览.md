@@ -1,5 +1,4 @@
-# NAT 网址转换  
-[ref: https://blog.csdn.net/qq_33314107/article/details/80900448](https://blog.csdn.net/xitong2012/article/details/22065951)
+# NAT 概览
 > [wiki: NAT](https://en.wikipedia.org/wiki/Network_address_translation): 
 Network address translation (NAT) is a method of remapping an IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device.
 The technique was originally used to avoid the need to assign a new address to every host when a network was moved, or when the upstream Internet service provider was replaced, but could not route the networks address space. 
