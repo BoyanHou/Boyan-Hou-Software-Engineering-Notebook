@@ -38,5 +38,5 @@
       即可。  
   - `$ sudo`选项  
     - `-i`：打开一个interactive shell；默认使用root uid  
-      `sudo -i`  的效果等同于 `sudo su -`  
+      `$ sudo -i`  的效果等同于 `$ sudo su -`  
       
