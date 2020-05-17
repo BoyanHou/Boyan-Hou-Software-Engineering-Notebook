@@ -30,4 +30,10 @@
 - **注意**    
   - 在一些Linux发行版中（例如Ubuntu），出于安全考虑，root用户默认disabled，没有密码，不能通过`$ su`登入  
     然而，可以使用`$ sudo su -` 命令登入  
-    
+- **`sudo`与`su`的区别: **  
+  - `su`以目标用户的身份打开子进程shell之后，即可使用目标用户的全部权限  
+    - 因此需要输入目标用户的密码  
+  - `sudo`则是fine-grained control，由系统文件规定了`who can do what to whom`  
+    - 权限校验是根据当前用户身份做的，所以只需要输入当前用户的密码  
+    详见[bash命令：sudo 以其它用户的身份执行命令](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/shell/bash/bash%E5%91%BD%E4%BB%A4/bash%E5%91%BD%E4%BB%A4%EF%BC%9Asudo%20%E4%BB%A5%E5%85%B6%E5%AE%83%E7%94%A8%E6%88%B7%E7%9A%84%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8C%E5%91%BD%E4%BB%A4.md)  
+  
