@@ -25,6 +25,6 @@
   - 如果`sudoers`文件中允许，则sudo进程就会再生出一个子进程来执行sudo后面的命令  
     - 该子进程的uid跟sudo进程的uid相同，都是root user的uid  
   - sudo命令要求输入当前用户的密码，只是为了验证当前用户确实是其本人  
-    （sudo进程本身不需要任何密码来获得权限，因为它用的就是root用户的uid）  
+    （sudo does not need your user password for anything，因为它用的就是root用户的uid）  
   - 
   
