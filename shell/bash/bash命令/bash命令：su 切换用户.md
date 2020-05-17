@@ -27,5 +27,7 @@
   - `-c`, `--command`  
     以目标用户的身份执行一条命令，而不进入interactive shell  
     e.g. `$ su -c ps`  
-    
+- **注意**    
+  - 在一些Linux发行版中（例如Ubuntu），出于安全考虑，root用户默认disabled，没有密码，不能通过`$ su`登入  
+    然而，可以使用`$ sudo su -` 命令登入  
     
