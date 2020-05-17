@@ -6,7 +6,7 @@
 ### Terminologies  
 - NAT gateway, NAT网关  
 - NAT-T, Network Address Translation-Traversal，内网穿透，NAT穿透  
-- [ngrok](https://ngrok.com/)，内网穿透工具  
+- [ngrok](https://ngrok.com/)，开源内网穿透工具  
 
 ### Why  
 - 现代大多数设备都只有局域网IP，没有公网IP，只能通过接入NAT网关来与外网沟通，而无法被从外部访问到  
