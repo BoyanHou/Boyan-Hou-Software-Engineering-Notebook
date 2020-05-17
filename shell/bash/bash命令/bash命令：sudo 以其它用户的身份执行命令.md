@@ -36,4 +36,7 @@
       %sudo   ALL=(ALL:ALL) NOPASSWD: ALL
       ```
       即可。  
-    
+  - `$ sudo`选项  
+    - `-i`：打开一个interactive shell；默认使用root uid  
+      `sudo -i`  的效果等同于 `sudo su -`  
+      
