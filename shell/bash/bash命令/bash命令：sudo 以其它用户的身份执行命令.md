@@ -35,3 +35,5 @@
       ```sudoers
       %sudo   ALL=(ALL:ALL) NOPASSWD: ALL
       ```
+      即可。  
+    
