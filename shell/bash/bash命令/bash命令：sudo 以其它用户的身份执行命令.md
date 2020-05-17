@@ -7,7 +7,7 @@
   A：使用`su`切换到目标用户之后，就会拥有目标用户的全部权限，这很不`fine-grain control`  
 ## HOW 
 > You gain your root powers because of setuid bit of /usr/bin/sudo, not because of any passwords you enter.  
-
+**当然，不要忘记：sudo除了可以使用默认的root权限，也可通过 -u 选项来指定使用任何user的权限（只要/etc/sudoers允许）**
 - `sudo`方法的执行文件(`/usr/bin/sudo`)的`setuid bit`使得不管由哪个用户执行，其sudo进程的uid都是该执行文件的owner的uid（就是root）  
 - 当使用`sudo`方法执行命令时，首先`fork`出一个sudo进程，它的uid就是root user的uid  
   sudo进程首先去`/etc/sudoers`文件查看，调用它的用户有没有权限用`sudo`执行这个命令  
