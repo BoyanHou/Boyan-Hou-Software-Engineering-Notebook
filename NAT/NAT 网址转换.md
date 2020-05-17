@@ -7,4 +7,5 @@ One Internet-routable IP address of a NAT gateway can be used for an entire priv
 
 - 网址转换（NAT）是通过改router包中的IP头信息实现的  
 - 最初用来避免网址的改动
-- 现在用来缓解IPv4地址枯竭的问题：一个拥有公网IP的NAT gateway可以供一片私有IP使用  
+- 现在用来缓解IPv4地址枯竭的问题：一个拥有公网IP的NAT gateway可以供一片局域网使用  
+  - 其实就是使只有局域网IP的终端可以单向访问外网
