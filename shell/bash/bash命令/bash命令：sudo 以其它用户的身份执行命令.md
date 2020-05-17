@@ -9,7 +9,7 @@
 - `sudo`方法的执行文件(`/usr/bin/sudo`)的`setuid bit`使得不管由哪个用户执行，它都使用的是该执行文件的owner的uid（就是root）  
 - 当使用`sudo`方法执行命令时，它首先去`/etc/sudoers`文件查看，调用它的用户有没有权限用`sudo`执行这个命令  
   - `sudoers`文件定义了"which users can run which commands using sudo mechanism."  
-    一个`sudoers`文件实例（ubuntu）：  
+    一个`/etc/sudoers`文件实例（ubuntu）：  
     ```sudoers
     # User privilege specification
     root    ALL=(ALL:ALL) ALL
