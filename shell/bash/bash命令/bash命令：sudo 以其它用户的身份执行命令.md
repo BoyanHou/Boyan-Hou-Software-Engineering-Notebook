@@ -30,5 +30,8 @@
     - 该子进程的uid跟sudo进程的uid相同，都是root user的uid  
   - sudo命令要求输入当前用户的密码，只是为了验证当前用户确实是其本人  
     （sudo does not need your user password for anything，因为它用的就是root用户的uid）  
-  - 
-  
+    - 这个要求提供了一定的预警和保护的功能，但若不想要，可以很容易的去掉    
+      更改`/etc/sudoers`文件中的`%sudo` entry为:  
+      ```sudoers
+      %sudo   ALL=(ALL:ALL) NOPASSWD: ALL
+      ```
