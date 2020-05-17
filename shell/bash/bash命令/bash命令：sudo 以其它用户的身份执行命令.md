@@ -18,6 +18,7 @@
     %admin ALL=(ALL) ALL
 
     # Allow members of group sudo to execute any command
+    # It lets anybody in the "sudo" group to execute any command as any user.
     %sudo   ALL=(ALL:ALL) ALL
     ```
   - 
