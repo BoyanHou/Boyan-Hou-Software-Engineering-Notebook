@@ -1,5 +1,6 @@
 # bash命令：su 切换用户
 [ref: Su Command in Linux (Switch User)](https://linuxize.com/post/su-command-in-linux/)  
+[ref: StackExchange: How does the “su” command work?](https://unix.stackexchange.com/questions/381498/how-does-the-su-command-work)  
 
 > The su (short for substitute or switch user) utility allows you to run commands with the privileges of another user, by default the root user.  
 <br>
