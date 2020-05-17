@@ -9,6 +9,10 @@
     - `$ su` 单独使用，默认切换到 root 用户  
   - 默认情况下：
     - 子进程具体用什么shell，以及其环境变量，都由`etc/passwd`中对应的目标用户的entry决定  
+      - 更改子进程所用shell的方法：  
+        1. 使用`$ su -s /path/to/your/shell` 具体声明所用shell  
+        2. 在当前进程中设置环境变量`$ export SHELL=/path/to/yourshell`然后使用`$ su -m`在子进程中保持所有环境变量  
+        3. 在`/etc/passwd`中直接更改目标用户的默认shell（不推荐）  
     - pwd 不会变化    
     - 不会load ~/.bashrc  
   - 可以使用`$ whoami`命令随时查看当前身份  
