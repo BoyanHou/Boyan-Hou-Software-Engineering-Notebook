@@ -13,5 +13,6 @@
   2. 替换源port: 使用NAT gateway所维护的一张 `port<->局域网ip 表`中所记录的，该局域网设备所对应的port number  
     （为了当响应包到达NAT gateway时，通过端口号就能知道该把这个包给哪个局域网ip）  
   3. `目标公网IP:目标公网port` 仍保持不变  
+  以此，当相应包返回时，便能先到达`NAT gateway` -> `该局域网设备`  
 
 
