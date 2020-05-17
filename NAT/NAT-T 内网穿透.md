@@ -13,4 +13,4 @@
 - Q：既然NAT网关中维护了一个`局域网设备IP：随机生成port`的表，那么只要知道该NAT网关的公网IP和该表中的port，不就可以从外部访问局域网设备了吗？  
   A：理论上可行，但是大多数情况下，出于安全考虑，网关只允许局域网内设备主动发起的会话，而不允许局域网外主动发起的会话。  
 - Q：那NAT-T怎么实现的？  
-  A；
+  A：简单说来，在外网部署一个具有公网IP的服务器，然后局域网内的服务器主动跟它建立通道（这是NAT允许的），此后对该公网IP的请求，即可通过该通道交由内网服务器处理。 详见[ref: StackOverflow：How does ngrok work behind a firewall?](https://stackoverflow.com/questions/23395129/how-does-ngrok-work-behind-a-firewall)    
