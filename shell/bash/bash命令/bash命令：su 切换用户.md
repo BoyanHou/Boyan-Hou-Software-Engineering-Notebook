@@ -24,4 +24,8 @@
     e.g. `$ su -s /usr/bin/zsh`  
   - `-p`, `--preserve-environment`  
     保留当前进程所有环境变量（`HOME`, `SHELL`, `USER`, `LOGNAME`），而不使用passwd文件中所定义的环境变量  
+  - `-c`, `--command`  
+    以目标用户的身份执行一条命令，而不进入interactive shell  
+    e.g. `$ su -c ps`  
+    
     
