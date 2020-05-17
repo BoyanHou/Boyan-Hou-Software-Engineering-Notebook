@@ -22,5 +22,6 @@
   - `-s`, `--shell`  
     子进程运行指定的shell，而不使用passwd文件中定义的shell  
     e.g. `$ su -s /usr/bin/zsh`  
-
-
+  - `-p`, `--preserve-environment`  
+    保留当前进程所有环境变量（`HOME`, `SHELL`, `USER`, `LOGNAME`），而不使用passwd文件中所定义的环境变量  
+    
