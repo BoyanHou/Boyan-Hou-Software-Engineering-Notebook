@@ -3,7 +3,11 @@
 ### JS中的类  
 - 原生JS是不存在`class`这个概念的（ES6中加入了`class`语法糖，但本质上属于`寄生混合继承`）  
 - 那么JS中的继承又是如何实现的呢？  
-  首先要了解的是，JS中的所有`function`都是对象，每一个方法对象都自动包含了一个filed：`prototype`  
+  首先要了解的是，JS中的所有`function`都是对象，每一个方法对象都自动包含了一个field：`prototype`；  
+  - `prototype`field是指向一个原型对象的引用；  
+  - 原型链：一个类的原型对象可以设为任意`对象A` -> `对象A所属类`的原型对象可以设置为任意`对象B` -> ...  
+    如此迭代，直到
+- 如何创造一个类呢？  
   e.g.:  
   ```javascript  
   function MyClass(arg1, arg2) {  // good practice: 方法名用大驼峰，表示这是MyObject类的构造函数  
