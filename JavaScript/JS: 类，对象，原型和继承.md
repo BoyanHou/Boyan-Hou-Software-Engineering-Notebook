@@ -14,7 +14,8 @@
     如果该对象不具有这个field/function，就进到它的原型对象里找 -> 原型对象里没有，就进到原型对象的原型对象里找...  
     （啥时候找到啥时候停，如果找到最后都没有，就返回`undefined`）  
     这同时也说明了：JS的继承一定属于dynamic dispatch  
-- 如何创造一个类呢？  
+  - 利用以上原理，即可通过设置一个类的prototype field为父类实例，来实现最基本的继承（即为原型链继承）  
+- 实例：如何创造一个类，并实现最基本的原型链继承    
   e.g.:  
   ```javascript  
   function MyClass(arg1, arg2) {  // good practice: 方法名用大驼峰，表示这是MyObject类的构造函数  
