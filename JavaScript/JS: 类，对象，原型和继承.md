@@ -27,9 +27,9 @@
   function SubClass(arg3) {
     this.arg3 = arg3;
   }
-  SubClass.prototype = new SuperClass(val1, val2);  
+  SubClass.prototype = new SuperClass(val1, val2);  // 创造一个父类实例作为子类原型  
   ```
   - 名为`MyClass`的方法，因为其本身即为对象，因此这个方法实质上也成为了`MyClass`类的构造函数；  
-  - `this`则代表了execution context，即指代该对象本身  
+  - `this`代表了execution context，即指代该对象本身  
   - 
     
