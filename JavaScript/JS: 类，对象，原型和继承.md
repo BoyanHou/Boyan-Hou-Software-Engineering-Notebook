@@ -16,14 +16,20 @@
     这同时也说明了：JS的继承一定属于dynamic dispatch  
   - 利用以上原理，即可通过设置一个类的prototype field为父类实例，来实现最基本的继承（即为原型链继承）  
 - 实例：如何创造一个类，并实现最基本的原型链继承    
-  e.g.:  
   ```javascript  
-  function MyClass(arg1, arg2) {  // good practice: 方法名用大驼峰，表示这是MyObject类的构造函数  
+  // 父类
+  function SuperClass(arg1, arg2) {  // good practice: 方法名用大驼峰，表示这是MyObject类的构造函数  
     this.arg1 = arg1;
     this.arg2 = arg2;
   }  
+  
+  // 子类
+  function SubClass(arg3) {
+    this.arg3 = arg3;
+  }
+  SubClass.prototype = new SuperClass(val1, val2);  
   ```
-  - 此处，名为`MyClass`的方法，因为其本身即为对象，因此这个方法实质上也成为了`MyClass`类的构造函数；  
-  - `this`则代表了execution context，即为该对象本身  
+  - 名为`MyClass`的方法，因为其本身即为对象，因此这个方法实质上也成为了`MyClass`类的构造函数；  
+  - `this`则代表了execution context，即指代该对象本身  
   - 
     
