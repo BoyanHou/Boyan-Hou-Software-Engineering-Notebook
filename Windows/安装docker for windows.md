@@ -7,4 +7,4 @@
   1. [ref: 安装Hyper-V和Container，并改写系统版本为win10 pro蒙骗docker](https://itnext.io/install-docker-on-windows-10-home-d8e621997c1d)  
   2. 直接安装 docker toolbox （本处采取此方法）  
 - 安装docker toolbox:  
-  [docker 官网 doc: Install Docker Toolbox on Windows](https://docs.docker.com/toolbox/toolbox_install_windows/)
+  [docker 官网: Install Docker Toolbox on Windows](https://docs.docker.com/toolbox/toolbox_install_windows/)
