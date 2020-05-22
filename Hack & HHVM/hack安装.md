@@ -1,5 +1,5 @@
 # hack安装  
-[ref: hhvm官网](https://docs.hhvm.com/hhvm/installation/linux)  
+[ref: hhvm官网: installation](https://docs.hhvm.com/hhvm/installation/linux)  
 
 - hack运行程序，需要：
   - `hhvm` （hack虚拟机，兼容php）：用来运行hack  
