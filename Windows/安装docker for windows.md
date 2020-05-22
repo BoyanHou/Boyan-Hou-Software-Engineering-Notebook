@@ -24,3 +24,6 @@
     $ docker-machine rm default
     $ docker-machine create --driver virtualbox default
     ```
+  - 之后尝试在powershell中运行`docker run hello-world`，可能会出现如下报错：  
+    `error during connect: Get http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.35/info: open //./pipe/docker_engine: The system cannot find the file specified. In the default daemon configuration on Windows, the docker client must be run elevated to connect. This error may also indicate that the docker daemon is not running.`  
+    解决（？？？）：进入docker-toolbox文件夹，运行start.sh；然后重开powershell，即可成功运行`docker run hello-world`  
