@@ -9,5 +9,7 @@
   - 好了之后会发现ubuntu桌面左边栏显示有CD光盘插入，点开，选择在terminal中打开  
     在打开的bash中：  
     ```bash
-    sudo ./ 
+    sudo ./VBoxLinuxAdditions.run
     ```
+    （这个光盘目录下一般会有很多版本的guest additions，如windows, osx...在ubuntu中要跑`VBoxLinuxAdditions.run`这个版本）  
+  - 重启vm，`Ctrl + F`全屏之后窗口即会显示正常比例  
