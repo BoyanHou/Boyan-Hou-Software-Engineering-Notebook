@@ -11,5 +11,12 @@
   - `<<` followed by a delimiting identifier (often EOF or END),   
   - followed, starting on the next line, by the text to be quoted, 
   - closed by the same delimiting identifier on its own line.   
-  This syntax is because here documents are formally stream literals, and the content of the document is redirected to stdin (standard input) of the preceding command;   
-  The here document syntax is by analogy with the syntax for input redirection, which is < “take input from the following file”.
+  ```bash
+  cat > test.txt << EOF 
+  your line 1
+  your line 2 
+  ... 
+  EOF
+  ```
+- This syntax is because here documents are formally stream literals, and the content of the document is redirected to stdin (standard input) of the preceding command;   
+  It is by analogy with the syntax for input redirection, which is < “take input from the following file”.  
