@@ -13,3 +13,4 @@
     ```
     （这个光盘目录下一般会有很多版本的guest additions，如windows, osx...在ubuntu中要跑`VBoxLinuxAdditions.run`这个版本）  
   - 重启vm，`Ctrl + F`全屏之后窗口即会显示正常比例  
+  - 确认vm已经安装guest addition这个内核模块：`$ lsmod | grep vboxguest`
