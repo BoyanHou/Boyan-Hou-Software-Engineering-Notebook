@@ -2,4 +2,4 @@
 
 | 文件 | 位置 |
 | ---- | --- |
-| | /var/log/auth.log |
+| sudo授权的shell命令记录 | /var/log/auth.log |
