@@ -19,6 +19,7 @@
 | 创建新用户 | [bash命令：创建新用户](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/shell/bash/bash%E5%91%BD%E4%BB%A4/bash%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%88%9B%E5%BB%BA%E6%96%B0%E7%94%A8%E6%88%B7.md) | |
 | 切换用户（by default root）<br>（实际上：以目标用户的uid在子进程中运行新的shell） | [bash命令：su 切换用户](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/shell/bash/bash%E5%91%BD%E4%BB%A4/bash%E5%91%BD%E4%BB%A4%EF%BC%9Asu%20%E5%88%87%E6%8D%A2%E7%94%A8%E6%88%B7.md) | |
 | 以其它用户（by default root）的权限执行命令 | [bash命令：sudo 以其它用户的身份执行命令](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/shell/bash/bash%E5%91%BD%E4%BB%A4/bash%E5%91%BD%E4%BB%A4%EF%BC%9Asudo%20%E4%BB%A5%E5%85%B6%E5%AE%83%E7%94%A8%E6%88%B7%E7%9A%84%E8%BA%AB%E4%BB%BD%E6%89%A7%E8%A1%8C%E5%91%BD%E4%BB%A4.md) | |
+| 生成ssh密钥对 | ssh-keygen | |
 
 ## 进程/核心  
 
