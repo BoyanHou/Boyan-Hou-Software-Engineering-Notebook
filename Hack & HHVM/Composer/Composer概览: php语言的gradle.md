@@ -9,12 +9,13 @@
     
 ### How  
 - 通过命令行操作，参考：[composer命令行](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/Hack%20%26%20HHVM/Composer/Composer%E5%91%BD%E4%BB%A4%E8%A1%8C.md)  
-- 项目结构：  
+- `项目结构`  
   ```
   > project-root
     composer.json   # Composer在下载/更新包的时候，会同步更新这个文件
     composer.lock   # 包版本锁：记录该项目所需要的packages版本
     hh_autoload.json  # hh-autoload包所需，定义了hh-autoload会扫描哪些文件目录来生成map
+    .hhconfig       # ? 配置hh_client
     > src
     > tests
     > bin
