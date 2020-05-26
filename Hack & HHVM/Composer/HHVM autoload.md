@@ -38,6 +38,7 @@
     /**
       project_root/hh_autoload.json 
       */
+      
     {
       "roots": [
         "src/"
