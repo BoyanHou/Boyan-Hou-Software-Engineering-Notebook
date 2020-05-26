@@ -63,7 +63,7 @@
     <<__EntryPoint>>
     function main(): void {
       \Facebook\AutoloadMap\initialize();
-      ...
+      // some hack code...
     }
     ```
       
