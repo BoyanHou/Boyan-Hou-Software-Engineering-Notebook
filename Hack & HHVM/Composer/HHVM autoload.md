@@ -6,7 +6,7 @@
 
 
 ### Why  
-- 
+- 既然Composer自己就有autoload功能可以产生
 
 ### How  
 - 下载`hhvm-autoload`包到项目中：`$ composer require hhvm/hhvm-autoload`  
@@ -14,10 +14,13 @@
   `项目结构`  
   ```
   > project-root
+    composer.json   # Composer在下载/更新包的时候，会同步更新这个文件
+    composer.lock   # 包版本锁：记录该项目所需要的packages版本
+    hh_autoload.json  # hh-autoload包所需，定义了hh-autoload会扫描哪些文件目录来生成map
     > src
     > tests
     > bin
-    > vendor   # composer 默认会把包放在这里 
+    > vendor   # composer 默认会把包下载到这个目录下，一般需要.gitignore
       > bin    # composer 会自动把一切包中bin目录下的文件（如果存在）拷贝到这个bin目录中  
       > vendor-1 (e.g.Facebook)
         > package-1 (e.g. hhvm-autoload)
