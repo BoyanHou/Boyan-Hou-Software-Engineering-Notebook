@@ -3,12 +3,14 @@
 
 ### What  
 - hhvm-autoload是一个`vendor: hhvm`，用于hhvm的，用来替代composer中autoload功能的包  
-
+- hhvm-autoload与composer自带的autoload一个显著区别：  
+  - hhvm-autoload生成的map文件是`project_root/vendor/autoload.hack`  
+  - composer自带autoload生成的map文件是`project_root/vendor/autoload.php`  
 
 ### Why  
 - Q：【unsolved】既然Composer自己就有autoload功能可以产生map，那为啥要用hhvm-autoload来生成呢？  
-  A：？？？因为hhvm-autoload是hack & hhvm用的，Composer的autoload只能给php用？？？
-     ？？？因为hhvm-autoload 比 composer dumpautoload更快？？
+  A：？？？因为hhvm-autoload是hack & hhvm用的，Composer的autoload只能给php用？？？  
+     ？？？因为hhvm-autoload 比 composer dumpautoload更快？？  
 
 ### How  
 - 下载`hhvm-autoload`包到项目中：`$ composer require hhvm/hhvm-autoload`  
