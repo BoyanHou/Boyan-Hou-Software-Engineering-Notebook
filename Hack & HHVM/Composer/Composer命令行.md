@@ -1,7 +1,17 @@
 # Composer命令行
 [ref: devhint.io/composer](https://devhints.io/composer)  
 
+### 生成map  
+
+**注意！！**：在hack/hhvm项目中，不要使用composer本身的autoload来生成map，而要用hhvm-autoload包的autoload，详见[HHVM autoload](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/Hack%20&%20HHVM/Composer/HHVM%20autoload.md)
+
+| command | description |
+| ------- | ----------- |
+| `composer dumpautoload` | 在`project_root/vendor/`目录下生成autoload map文件`autoload.php` |
+| `composer dumpautoload -o` | 同上，但生成的是优化过的（？？）autoload map文件 | 
+
 ### 添加包  
+
 
 | command | description |
 | ------- | ----------- |
