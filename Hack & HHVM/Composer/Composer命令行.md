@@ -17,7 +17,7 @@
 | `composer update vendor/*` | 更新来自特定vendor的所有包 |
 | `composer update --lock` | 更新版本锁(`composer.lock`)，而不更新包本身 |
 
-### 下载依赖  
+### 下载包  
 
 | command | description |
 | ------- | ----------- |
