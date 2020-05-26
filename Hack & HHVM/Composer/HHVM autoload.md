@@ -34,7 +34,10 @@
       > ... 
   ```
   1. 若想使用`hhvm-autoload`自动生成map，必须在项目根目录下的hh_autoload.json中定义要扫描的目录：  
-    ```hh_autoload.json
+    ```json
+    /**
+      project_root/hh_autoload.json 
+      */
     {
       "roots": [
         "src/"
@@ -48,4 +51,19 @@
   2. 使用`$ ./vendor/bin/hh-autoload` 生成map    
      （生成的文件是`project_root/vendor/autoload.hack`）    
   3. 在线程入口文件中`require_once(__DIR__.'/vendor/autoload.hack');`  
-  
+     并且在入口函数中`\Facebook\AutoloadMap\initialize();`  
+    ```php
+    /**
+      project_root/index.php
+      */
+    <?hh //strict
+
+    require_once(__DIR__.'/vendor/autoload.hack');
+
+    <<__EntryPoint>>
+    function main(): void {
+      \Facebook\AutoloadMap\initialize();
+      ...
+    }
+    ```
+      
