@@ -13,5 +13,5 @@
 - 如果是刚开的项目，或者其它原因，导致根目录中没有`composer.lock`，那么执行`$ composer install`则会:  
   - 安装所有`composer.json`中声明的包的最新版本  
   - 自动创建`composer.lock`   
-
+- 更多对版本锁的操作参见[Composer命令行](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/Hack%20&%20HHVM/Composer/Composer%E5%91%BD%E4%BB%A4%E8%A1%8C.md)  
   
