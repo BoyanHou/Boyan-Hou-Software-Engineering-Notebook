@@ -15,7 +15,7 @@
   > project-root
     > src
     > tests
-    > vendor
+    > vendor   # composer 默认会把包放在这里
     > bin
   ```
   
