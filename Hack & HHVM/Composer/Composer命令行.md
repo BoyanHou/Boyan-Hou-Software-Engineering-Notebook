@@ -16,3 +16,12 @@
 | `composer update vendor/package` | 更新特定包 |
 | `composer update vendor/*` | 更新来自特定vendor的所有包 |
 | `composer update --lock` | 更新版本锁(`composer.lock`)，而不更新包本身 |
+
+### 下载依赖  
+
+| command | description |
+| ------- | ----------- |
+| `composer install` | 若项目根目录下存在`composer.lock`，则根据其下载所有包；若不存在，则根据`composer.json`下载所有包的最新版本，并创建`composer.lock` |
+| `composer install --dry-run` | 同上，但不会实际下载这些包 |
+
+
