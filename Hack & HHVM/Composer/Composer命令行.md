@@ -5,7 +5,8 @@
 
 | command | description |
 | ------- | ----------- |
-| `composer require vendor/package` | 将发行方（vendor）发布的包（package）下载到`project_root/vendor/vendor/`目录下 |
+| `composer require vendor/package` | 将发行方（vendor）发布的包（package）下载到`project_root/vendor/vendor/`目录下，并将包信息更新到`composer.json`的`require`部分 |
+| composer require vendor/package --dev | 同上，但包信息更新到`composer.json`的`require-dev`部分 | 
 
 ### 更新包  
 
@@ -16,6 +17,12 @@
 | `composer update vendor/package` | 更新特定包 |
 | `composer update vendor/*` | 更新来自特定vendor的所有包 |
 | `composer update --lock` | 更新版本锁(`composer.lock`)，而不更新包本身 |
+
+### 移除包  
+
+| command | description |
+| ------- | ----------- |
+| `composer remove vendor/package` | 删除`vendor/package`，以及`composer.json`中记录的包信息 |
 
 ### 下载包  
 
