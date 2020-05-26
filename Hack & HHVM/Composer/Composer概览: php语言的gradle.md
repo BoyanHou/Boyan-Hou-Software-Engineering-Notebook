@@ -14,6 +14,7 @@
   > project-root
     composer.json   # Composer在下载/更新包的时候，会同步更新这个文件
     composer.lock   # 包版本锁：记录该项目所需要的packages版本
+    hh_autoload.json  # hh-autoload包所需，定义了hh-autoload会扫描哪些文件目录来生成map
     > src
     > tests
     > bin
