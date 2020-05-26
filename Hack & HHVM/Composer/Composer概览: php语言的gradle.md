@@ -17,7 +17,7 @@
     > tests
     > bin
     > vendor   # composer 默认会把包放在这里 
-      > bin    # composer 会自动把所有vendor的包中的bin目录下的文件拷贝到这个bin目录中  
+      > bin    # composer 会自动把一切包中bin目录下的文件（如果存在）拷贝到这个bin目录中  
       > vendor-1 (e.g.Facebook)
         > package-1 (e.g. hhvm-autoload)
         > package-2
