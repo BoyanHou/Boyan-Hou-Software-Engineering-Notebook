@@ -9,7 +9,14 @@
     而是将包直接下载到项目目录（默认`project_root/vendor/`目录下）  
     
 ### How  
-[composer命令行](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/Hack%20%26%20HHVM/Composer/Composer%E5%91%BD%E4%BB%A4%E8%A1%8C.md)
-
+- 通过命令行操作，参考：[composer命令行](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/Hack%20%26%20HHVM/Composer/Composer%E5%91%BD%E4%BB%A4%E8%A1%8C.md)  
+- 项目结构：  
+  ```
+  > project-root
+    > src
+    > tests
+    > vendor
+    > bin
+  ```
   
   
