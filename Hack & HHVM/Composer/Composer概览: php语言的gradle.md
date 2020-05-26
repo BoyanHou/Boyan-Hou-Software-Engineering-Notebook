@@ -26,5 +26,10 @@
       > vendor-3
       > ... 
   ```
-  
+  - **注意！！**：composer 会自动拷贝一切`project-root/vendor/vendor/package/./bin`中的文件（如果存在）到`project-root/vendor/bin`目录中  
+    - 可能是为了方便从命令行调用这些可执行文件？  
+    - 但是必定会引起`hh_client`报错（函数/类..命名重复）  
+    - 解决：[ref: stack overflow](https://stackoverflow.com/questions/56641543/why-are-there-naming-collisions-in-composers-vendor-folder-between-bin-and-hh)  
+      在`.hhconfig`中添加`ignored_paths = [ "vendor/.+/tests/.+", "vendor/.+/bin/.+" ]`，以忽略包目录下的bin目录  
+    
   
