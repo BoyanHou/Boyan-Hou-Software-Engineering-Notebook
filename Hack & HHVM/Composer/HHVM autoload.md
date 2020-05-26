@@ -34,8 +34,7 @@
       > ... 
   ```
   1. 若想使用`hhvm-autoload`自动生成map，必须在项目根目录下的hh_autoload.json中定义要扫描的目录：  
-    ```json
-    
+    ```json  
     /**
       project_root/hh_autoload.json 
       */
@@ -57,6 +56,7 @@
     /**
       project_root/index.php
       */
+      
     <?hh //strict
 
     require_once(__DIR__.'/vendor/autoload.hack');
