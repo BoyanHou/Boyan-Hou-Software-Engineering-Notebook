@@ -6,7 +6,8 @@
 
 
 ### Why  
-- 既然Composer自己就有autoload功能可以产生
+- Q：既然Composer自己就有autoload功能可以产生map，那为啥要用hhvm-autoload来生成呢？  
+  A：？因为hhvm-autoload是hack & hhvm用的，Composer的autoload只能给php用  
 
 ### How  
 - 下载`hhvm-autoload`包到项目中：`$ composer require hhvm/hhvm-autoload`  
@@ -30,3 +31,15 @@
       > vendor-3
       > ... 
   ```
+  - 若想使用`hhvm-autoload`自动生成map，必须在项目根目录下的hh_autoload.json中定义要扫描的目录：  
+    ```hh_autoload.json
+    {
+      "roots": [
+        "src/"
+      ],
+      "devRoots": [
+        "tests/"
+      ],
+      "devFailureHandler": "Facebook\\AutoloadMap\\HHClientFallbackHandler"
+    }     
+    ```
