@@ -31,7 +31,7 @@ echo
 echo ${dlm_line}
 echo "step3: ignore paths \"vendor/./tests/.\" & \"vendor/./bin/.\" in .hhconfig to avoid naming collision for named entities"
 echo "       this is because Composer will automatically copy all files under "vendor/vendor/./bin/" to "vendor/bin/"  
-echo ignored_paths = [ "vendor/.+/tests/.+", "vendor/.+/bin/.+" ] > .hhconfig
+echo "ignored_paths = [ "vendor/.+/tests/.+", "vendor/.+/bin/.+" ]" > .hhconfig
 echo "finished"
 echo
 
