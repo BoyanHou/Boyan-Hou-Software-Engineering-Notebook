@@ -1,6 +1,5 @@
 # Composer概览: php语言的gradle  
 
-[ref: devhint.io/composer](https://devhints.io/composer)
 [ref: get-composer.org](https://getcomposer.org/doc/01-basic-usage.md#composer-json-project-setup)
 
 ### What  
