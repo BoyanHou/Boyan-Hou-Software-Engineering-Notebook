@@ -8,8 +8,8 @@
   - 它不像apt-get一类直接将包下载到用户类库中   
     而是将包直接下载到项目目录（默认`project_root/vendor/`目录下）  
     
-### man  
+### How  
+[composer命令行](https://github.com/BoyanHou/Boyan-Hou-Software-Engineering-Notebook/blob/master/Hack%20%26%20HHVM/Composer/Composer%E5%91%BD%E4%BB%A4%E8%A1%8C.md)
 
-| command | description |
-| ------- | ----------- |
-| `composer require vendor/package` | 将发行方（vendor）发布的包（package）下载到`project_root/vendor/vendor/`目录下 |
+  
+  
